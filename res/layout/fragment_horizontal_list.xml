@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <air.com.snagfilms.app.component.HorizontalView
+            android:id="@+id/dynamic_lead"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/horizontalview_margin"
+            android:smoothScrollbar="true" />
+
+        <TextView
+            android:id="@+id/snag_select_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/label_left_margin"
+            android:layout_below="@id/dynamic_lead"
+            android:text="@string/snag_select_label"
+            android:textSize="@dimen/activity_home_label_size"
+            android:textStyle="bold" />
+
+        <air.com.snagfilms.app.component.HorizontalView
+            android:id="@+id/snag_select_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/horizontalview_margin"
+            android:smoothScrollbar="true"
+            android:layout_below="@id/snag_select_list"
+            android:spacing="@dimen/horizontalview_spacing" />
+
+        <TextView
+            android:id="@+id/hot_snag_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/hot_on_snag_label"
+            android:textSize="@dimen/activity_home_label_size"
+            android:textStyle="bold" 
+            android:layout_below="@id/snag_select_list"/>
+
+        <air.com.snagfilms.app.component.HorizontalView
+            android:id="@+id/hot_on_snag_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/horizontalview_margin"
+            android:smoothScrollbar="true"
+            android:layout_below="@id/hot_snag_label"
+            android:spacing="@dimen/horizontalview_spacing" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/recommended_snag_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/label_left_margin"
+        android:gravity="center_vertical"
+        android:text="@string/Recommended_label"
+        android:textSize="@dimen/activity_home_label_size"
+        android:textStyle="bold" />
+
+    <air.com.snagfilms.app.component.HorizontalView
+        android:id="@+id/recommended_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/horizontalview_margin"
+        android:smoothScrollbar="true"
+        android:spacing="@dimen/horizontalview_spacing" />
+
+</LinearLayout>

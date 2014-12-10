@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="@drawable/horizontal_listview_item_selector"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dynamic_lead_poster_top_margin"
+        android:layout_marginLeft="@dimen/half_dynamiclead_image_margin_left"
+        android:layout_marginRight="@dimen/half_dynamiclead_image_margin_right"
+        android:layout_marginBottom="@dimen/dynamic_lead_poster_bottom_margin" >
+
+        <ImageView
+            android:id="@+id/dynamic_lead_thumbnail"
+            android:layout_width="@dimen/dynamiclead_image_width"
+            android:layout_height="@dimen/dynamiclead_image_height"
+            android:scaleType="fitXY"
+            android:src="@drawable/loading_dynamic_lead"
+            android:background="@drawable/image_shadow_selector"/>
+
+        <ImageView
+            android:id="@+id/badgedynamiclist"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dynamiclead_image_height"
+            android:alpha="1"
+            android:background="@null"
+            android:visibility="gone"
+            android:scaleType="matrix"
+             />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/dymanic_lead_title"
+        android:layout_width="@dimen/dynamiclead_image_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/half_dynamiclead_image_margin_left"
+        android:background="?android:attr/activatedBackgroundIndicator"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/body_text_primary"
+        android:textSize="@dimen/dynamiclead_film_text_size"
+        android:fontFamily="sans-serif-light" 
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBarSnag"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="@dimen/dynamiclead_image_progress_bar_width"
+        android:layout_marginLeft="@dimen/half_dynamiclead_image_margin_left"
+        android:layout_height="@dimen/progress_bar_height"
+        android:layout_gravity="top"
+        android:progressDrawable="@drawable/progress_style"
+        android:visibility="invisible" />
+    <!-- android:layout_marginLeft="12dp" -->
+
+</LinearLayout>

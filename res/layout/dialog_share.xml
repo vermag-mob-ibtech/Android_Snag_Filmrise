@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/share_height"
+        android:layout_marginLeft="@dimen/share_title_left_margin"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:text="@string/share"
+        android:textColor="@color/settings_selected_text"
+        android:textSize="@dimen/textsize_title_share" />
+
+    <View
+        android:id="@+id/view_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/share_divider"
+        android:background="@color/settings_selected_text" />
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:numColumns="3"
+        android:stretchMode="columnWidth" >
+    </GridView>
+
+</LinearLayout>

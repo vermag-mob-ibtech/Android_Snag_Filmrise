@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dialog_alllogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/all_media_title_top_margin_phone"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_horizontal"
+            android:lines="1"
+            android:text="@string/alllogin_text"
+            android:textColor="@color/body_text_primary"
+            android:textSize="@dimen/all_media_sub_header_text_size"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/dialog_allloginlinear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/all_button_top_margin"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/dialog_alllogin_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/subtitle"
+                android:textColor="@color/body_text_primary"
+                android:textSize="@dimen/all_media_body_text_size"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/dialog_alllogin_here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/all_login_marginLeft"
+                android:clickable="true"
+                android:fontFamily="sans-serif-light"
+                android:onClick="true"
+                android:text="@string/subtitleHere"
+                android:textColor="@color/body_text_primary"
+                android:textSize="@dimen/all_media_body_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/snagfilms_login"
+            android:layout_width="@dimen/buton_width"
+            android:layout_height="@dimen/buton_height"
+            android:layout_marginTop="@dimen/margin_btn_text"
+            android:background="@drawable/item_selector_snagfilms" />
+
+        <ImageButton
+            android:id="@+id/facebook_login"
+            android:layout_width="@dimen/buton_width"
+            android:layout_height="@dimen/buton_height"
+            android:layout_marginTop="@dimen/all_media_title_top_margin"
+            android:background="@drawable/item_selector_facebook" />
+
+        <ImageButton
+            android:id="@+id/googleplus_login"
+            android:layout_width="@dimen/buton_width"
+            android:layout_height="@dimen/buton_height"
+            android:layout_marginTop="@dimen/all_media_title_top_margin"
+            android:background="@drawable/item_selector_googleplus" />
+
+        <ImageButton
+            android:id="@+id/twitter_login"
+            android:layout_width="@dimen/buton_width"
+            android:layout_height="@dimen/buton_height"
+            android:layout_marginTop="@dimen/all_media_title_top_margin"
+            android:background="@drawable/item_selector_twitter" />
+    </LinearLayout>
+
+</LinearLayout>

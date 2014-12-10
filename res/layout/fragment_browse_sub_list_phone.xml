@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/browseSubListPhone"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/categories_phone_selector" >
+
+    <ImageView
+        android:id="@+id/subCategoryThumbnail"
+        android:layout_width="@dimen/catogories_width"
+        android:layout_height="@dimen/catogories_height"
+        android:layout_marginLeft="@dimen/browse_section_image_margin_left"
+        android:layout_marginTop="@dimen/browse_section_image_margin"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/loading_snag_normal_browse"
+       android:background="@drawable/image_shadow_selector"
+       android:contentDescription="@string/desc" />
+
+    <View
+        android:id="@+id/horizon"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/horizontalline_height"
+        android:layout_below="@id/subCategoryThumbnail"
+        android:background="@color/grey" />
+
+    <TextView
+        android:id="@+id/subTitlePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/browse_section_film_title_margin_left"
+        android:layout_toRightOf="@+id/subCategoryThumbnail"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/body_text_primary"
+        android:textSize="@dimen/browse_film_title_size"
+        android:fontFamily="sans-serif-light"
+        android:layout_centerVertical="true" />
+   <!--  android:layout_centerVertical="true" -->
+   <!--  android:layout_marginBottom="@dimen/browse_section_film_title_margin" -->
+   <!-- android:layout_marginTop="@dimen/browse_section_film_title_margin" -->
+   
+</RelativeLayout>

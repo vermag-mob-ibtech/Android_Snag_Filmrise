@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/browse_sub_list_margin_bottom" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/left_margin_detail"
+        android:layout_marginTop="@dimen/browse_scroll_margin_top" >
+
+        <TextView
+            android:id="@+id/sub_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif-light"
+            android:scaleType="fitEnd"
+            android:textColor="@color/body_text_primary"
+            android:textSize="@dimen/dynamiclead_title_text_size" />
+
+        <ImageView
+            android:id="@+id/browse_grid_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/browse_images_margin"
+            android:layout_marginRight="@dimen/browse_sub_list_margin_right"
+            android:background="@drawable/homegrid_row_image_selector"
+            android:clickable="true"
+            android:padding="@dimen/home_grid_image_padding"
+            android:src="@drawable/grid_unselected" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="@dimen/home_grid_separator_width"
+            android:layout_height="@dimen/home_grid_separator_height"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/browse_grid_image"
+            android:background="@color/grey" />
+
+        <ImageView
+            android:id="@+id/browse_row_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/browse_images_margin"
+            android:layout_toLeftOf="@+id/separator"
+            android:clickable="true"
+            android:padding="@dimen/home_grid_image_padding"
+            android:src="@drawable/row_selected" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_layout" >
+
+        <air.com.snagfilms.app.component.HorizontalView
+            android:id="@+id/browse_gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/gallery_height"
+            android:layout_marginLeft="@dimen/horizontal_left_margin"
+            android:smoothScrollbar="true" >
+        </air.com.snagfilms.app.component.HorizontalView>
+
+        <air.com.snagfilms.app.supertooltips.ToolTipRelativeLayout
+            android:id="@+id/activity_main_tooltipframelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/FilmListLoadingProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/snag_select_height"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_layout"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

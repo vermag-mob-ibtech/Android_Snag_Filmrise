@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_bar_share"
+        android:enabled="true"
+        android:icon="@drawable/share_icon"
+        android:menuCategory="system"
+        android:orderInCategory="1"
+        android:title="@string/action_share"
+        android:visible="false"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/media_route_menu_item"
+        android:enabled="true"
+        android:icon="@drawable/mr_ic_media_route_off_holo_dark"
+        android:title="@string/media_route_menu_title"
+        app:actionProviderClass="air.com.snagfilms.cast.RouteActionProvider"
+        android:visible="false"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_search"
+        android:enabled="true"
+        android:icon="@drawable/search_icon"
+        android:menuCategory="system"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:title="@string/action_search"
+        android:visible="true"
+        app:actionViewClass="android.widget.SearchView"/>
+ <!--    <item
+        android:id="@+id/name"
+        android:enabled="false"
+        android:menuCategory="system"
+        android:showAsAction="collapseActionView"
+        android:visible="false">
+    </item> -->
+    <item
+        android:id="@+id/settings"
+        android:enabled="true"
+        android:menuCategory="system"
+        android:showAsAction="collapseActionView"
+        android:title="@string/action_settings"
+        android:visible="true"/>
+    <item
+        android:id="@+id/sign_in"
+        android:enabled="true"
+        android:menuCategory="system"
+        android:showAsAction="collapseActionView"
+        android:title="@string/str_sign_in"/>
+    <item
+        android:id="@+id/sign_out"
+        android:enabled="true"
+        android:menuCategory="system"
+        android:showAsAction="collapseActionView"
+        android:title="@string/str_sign_out"/>
+
+</menu>

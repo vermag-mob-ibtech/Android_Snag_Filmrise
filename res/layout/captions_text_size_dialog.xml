@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_text_size"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/captions_sections_height"
+        android:layout_marginLeft="@dimen/captions_margin"
+        android:fontFamily="sans-serif"
+        android:gravity="left|center_vertical"
+        android:text="@string/text_size"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_caption"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view_separator_one"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/captions_view_height"
+        android:background="@color/black" />
+
+    <RadioGroup
+        android:id="@+id/rg_all_text_Size"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/captions_margin"
+        android:layout_marginRight="@dimen/captions_margin">
+
+        <RadioButton
+            android:id="@+id/rb_extra_small"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/captions_sections_height"
+            android:button="@null"
+            android:background="@null"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:fontFamily="sans-serif"
+            android:gravity="left|center_vertical"
+            android:text="@string/extra_small"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_list_caption"
+            />
+
+     
+        <RadioButton
+            android:id="@+id/rb_small"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/captions_sections_height"
+          	android:button="@null"
+            android:background="@null"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:fontFamily="sans-serif"
+            android:text="@string/small"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_list_caption" />
+
+    
+
+        <RadioButton
+            android:id="@+id/rb_normal"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/captions_sections_height"
+			android:button="@null"
+            android:background="@null"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:fontFamily="sans-serif"
+            android:gravity="left|center_vertical"
+            android:text="@string/normal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_list_caption" 
+            android:checked="true" />
+
+       
+        <RadioButton
+            android:id="@+id/rb_large"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/captions_sections_height"
+           	android:button="@null"
+            android:background="@null"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:fontFamily="sans-serif"
+            android:gravity="left|center_vertical"
+            android:text="@string/Large"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_list_caption" />
+
+       
+        <RadioButton
+            android:id="@+id/rb_extra_large"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           	android:button="@null"
+            android:background="@null"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:fontFamily="sans-serif"
+            android:gravity="left|center_vertical"
+            android:text="@string/extra_large"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_list_caption" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/caption_cancel_height"
+        android:background="@drawable/button_selector"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/btn_caption_cancel"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_btn_caption" />
+
+</LinearLayout>

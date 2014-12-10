@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical" 
+    android:background="#000000">
+
+    <FrameLayout
+        android:id="@+id/video_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+     <TextView 
+        android:id="@+id/timedTextTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:textColor="@color/white"/>
+    </FrameLayout>
+	<RelativeLayout
+        android:id="@+id/previewContainer"
+        android:layout_width="@dimen/container_width"
+        android:layout_height="@dimen/container_height"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+	<ImageView
+	    android:id="@+id/previewImage"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:contentDescription="@string/coverArt" />
+	</RelativeLayout>
+    <RelativeLayout        
+        android:id="@+id/grayBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.5" 
+        android:background="@drawable/preview_shape"
+        android:visibility="gone"></RelativeLayout>
+	<RelativeLayout
+        android:id="@+id/castingDetailsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+	<ImageView
+	    android:id="@+id/castCoverArt"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:contentDescription="@string/coverArt" />
+
+	<TextView
+            android:id="@+id/castDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/castCoverArt"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/progess_bar_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/progess_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Preparing..."
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</RelativeLayout>

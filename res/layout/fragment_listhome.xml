@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >  
+
+        <LinearLayout
+            android:id="@+id/ads_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <air.com.snagfilms.cast.chromecast.widget.MiniController
+            android:id="@+id/miniController1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ads_container"
+            android:background="@drawable/shadow7"
+            android:visibility="gone" >
+        </air.com.snagfilms.cast.chromecast.widget.MiniController>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_container"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/homelist_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:layout_marginLeft="@dimen/browse_title_margin_left"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/body_text_primary"
+                android:textSize="@dimen/browse_title_size_phone" />
+
+            <View
+                android:id="@+id/view_horizontal_listhome"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/horizontalline_height"
+                android:layout_below="@id/homelist_text"
+                android:layout_marginTop="@dimen/small_margin_detail"
+                android:background="@color/grey" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_layout"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/homelist_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/white"
+                android:dividerHeight="@dimen/list_home_view_height" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/FilmListLoadingProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/noDataMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/no_history"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

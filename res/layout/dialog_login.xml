@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_facebook"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/buton_height"
+            android:layout_marginBottom="@dimen/marginbottom"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="@dimen/margindouble"
+            android:background="@drawable/button_selector_facebook"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/logintext"
+            android:textColor="@color/welcome_button_text_color"
+            android:textSize="@dimen/welcome_button_text_size" />
+
+        <TextView
+            android:id="@+id/text_or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_facebook"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="@string/or" />
+
+        <air.com.snagfilms.app.component.ClearEditText
+            android:id="@+id/et1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_or"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/email"
+            android:inputType="text"
+            android:paddingTop="@dimen/edittext_padding"
+            android:tag="@string/email"
+            android:textColor="@color/body_text_primary"
+            android:textSize="@dimen/all_media_body_text_size" />
+
+        <RelativeLayout
+            android:id="@+id/passwordlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et1"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin" >
+
+            <air.com.snagfilms.app.component.ClearEditText
+                android:id="@+id/et2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/checkbox_text"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/margintop"
+                android:layout_toLeftOf="@+id/checkbox_text"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword|textNoSuggestions"
+                android:paddingTop="@dimen/edittext_padding"
+                android:tag="@string/password"
+                android:textColor="@color/body_text_primary"
+                android:textSize="@dimen/all_media_body_text_size" />
+
+            <CheckBox
+                android:id="@+id/hide_passsword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/checkbox_marginbottom"
+                android:layout_marginRight="@dimen/checkbox_marginright"
+                android:layout_marginTop="@dimen/edittext_top"
+                android:button="@drawable/checkbox_border"
+                android:checked="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/checkbox_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/hide_passsword"
+                android:text="@string/hide"
+                android:textColor="@color/body_text_primary"
+                android:textSize="@dimen/checkbox_textsize"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/footer_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/footer_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bar_navigation"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/buton_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/buton_login_marginLeft"
+                android:layout_marginRight="@dimen/buton_login_marginRight"
+                android:layout_weight=".8"
+                android:background="@drawable/button_selector"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/login"
+                android:textColor="@color/welcome_button_text_color"
+                android:textSize="@dimen/welcome_button_text_size" />
+
+            <Button
+                android:id="@+id/tv_forgotpwd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/buton_forgot_marginLeft"
+                android:layout_marginRight="@dimen/buton_forgot_marginRight"
+                android:layout_weight="1.2"
+                android:background="@android:color/transparent"
+                android:onClick="true"
+                android:text="@string/forgotpassword"
+                android:textColor="@color/settings_selected_text" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

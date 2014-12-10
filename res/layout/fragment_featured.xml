@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+                    <RelativeLayout
+                        android:id="@+id/featured_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                       >
+
+                        <TextView
+                            android:id="@+id/featured_sub_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/left_margin_detail"
+                            android:fontFamily="sans-serif-light"
+                            android:scaleType="fitEnd"
+                            android:textColor="@color/body_text_primary"
+                            android:textSize="@dimen/dynamiclead_title_text_size"
+                             android:layout_marginTop="@dimen/tray_margin_bottom"  />
+
+                        <ImageView
+                            android:id="@+id/featured_grid_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center|center_vertical"
+                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_marginRight="@dimen/margin"
+                            android:background="@drawable/homegrid_row_image_selector"
+                            android:clickable="true"
+                            android:padding="@dimen/home_grid_image_padding"
+                            android:src="@drawable/grid_unselected" />
+
+                        <View
+                            android:id="@+id/separator_for_featured"
+                            android:layout_width="@dimen/small_margin_detail"
+                            android:layout_height="@dimen/frag_marginHeight"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/featured_grid_image"
+                            android:background="@color/grey" />
+
+                        <ImageView
+                            android:id="@+id/featured_row_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/marginright"
+                            android:layout_toLeftOf="@id/separator_for_featured"
+                            android:padding="5dip"
+                            android:src="@drawable/row_selected" />
+                    </RelativeLayout>
+                    <FrameLayout 
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@id/featured_layout"
+                        >
+                    <air.com.snagfilms.app.component.HorizontalView
+                        android:id="@+id/featured_gallery"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/gallery_height"
+                        android:layout_marginLeft="@dimen/horizontal_left_margin"
+                        android:smoothScrollbar="true"
+                       android:layout_marginRight="@dimen/horizontal_view_right_margin"
+                       android:visibility="visible" >
+                    </air.com.snagfilms.app.component.HorizontalView>
+              <air.com.snagfilms.app.supertooltips.ToolTipRelativeLayout
+        				android:id="@+id/activity_main_tooltipframelayout"
+       					android:layout_width="fill_parent"
+        				android:layout_height="fill_parent"
+        				 />
+                     </FrameLayout>
+
+</RelativeLayout>

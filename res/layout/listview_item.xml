@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/horizontal_listview_item_selector"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/snag_select_image_height"
+        android:layout_marginTop="@dimen/dynamic_lead_poster_top_margin"
+        android:layout_marginLeft="@dimen/half_snag_select_margin_left"
+        android:layout_marginRight="@dimen/half_snag_select_margin_right"
+        android:layout_marginBottom="@dimen/dynamic_lead_poster_bottom_margin" >
+		
+        <ImageView
+            android:id="@+id/movie_thumbnail_collection_shadow"
+            android:layout_width="@dimen/snag_select_image_width"
+            android:layout_height="@dimen/snag_select_image_height"
+            android:background="@drawable/collection_shadow_bg"
+            android:visibility="gone" />
+        <ImageView
+            android:id="@+id/movie_thumbnail"
+            android:layout_width="@dimen/snag_select_image_width"
+            android:layout_height="@dimen/snag_select_image_height"
+            android:background="@drawable/image_shadow_selector" 
+            android:scaleType="centerCrop" />
+ <!--  android:src="@drawable/loading_snag_normal_browse" -->
+        <ImageView
+            android:id="@+id/badgesnagList"
+            android:layout_width="@dimen/snag_select_image_width"
+            android:layout_height="@dimen/snag_select_image_height"
+            android:alpha="1"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/snag_title"
+        android:layout_width="@dimen/snag_select_image_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/half_snag_select_margin_left"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/body_text_primary"
+        android:textSize="@dimen/dynamiclead_film_text_size"
+        android:fontFamily="sans-serif-light"  />
+
+    <ProgressBar
+        android:id="@+id/progressBarSnag"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="@dimen/snag_select_image_progress_bar_width"
+        android:layout_marginLeft="@dimen/half_snag_select_margin_left"
+        android:layout_height="@dimen/progress_bar_height"
+        android:layout_gravity="top"
+        android:progressDrawable="@drawable/progress_style"
+        android:visibility="invisible" />
+
+</LinearLayout>

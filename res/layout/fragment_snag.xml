@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <air.com.snagfilms.app.component.VerticalScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/ll6"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom" >
+
+                <TextView
+                    android:id="@+id/snag_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:scaleType="fitEnd"
+                    android:text="@string/snag_select_label"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/label_textSize" />
+
+                <ImageView
+                    android:id="@+id/snag_select_grid_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center|center_vertical"
+                    android:clickable="true"
+                    android:padding="@dimen/imgQue_padding"
+                    android:background="@drawable/homegrid_row_image_selector"
+                    android:layout_marginRight="@dimen/margin"
+                    android:src="@drawable/grid_unselected" />
+
+                <View
+                    android:id="@+id/separator"
+                    android:layout_width="@dimen/seperator_width"
+                    android:layout_height="@dimen/frag_seperator_height"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_marginTop="@dimen/sep_margin_top"
+                    android:layout_toLeftOf="@id/snag_select_grid_image"
+                    android:background="@color/grey"
+                    android:layout_marginLeft="@dimen/sep_margin_left"
+                    android:layout_marginRight="@dimen/sep_margin_right" />
+
+                <ImageView
+                    android:id="@+id/snag_select_row_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/separator"
+                    android:paddingTop="5dip"
+                    android:src="@drawable/row_selected" />
+			<!-- <RelativeLayout
+                    android:id="@+id/SnagListLoadingProgressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/snag_select_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/separator" 
+                    android:visibility="gone">
+
+                    <ProgressBar
+                        android:id="@+id/progressBar1"
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout> -->
+                <air.com.snagfilms.app.component.HorizontalView
+                    android:id="@+id/snag_select_gallery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/snag_select_height"
+                    android:layout_below="@id/snag_select"
+                    android:smoothScrollbar="true"
+                     >
+                </air.com.snagfilms.app.component.HorizontalView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom" >
+
+                <TextView
+                    android:id="@+id/hot_on_snag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:scaleType="fitEnd"
+                    android:text="@string/hot_on_snag_label"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/label_textSize" />
+
+                <ImageView
+                    android:id="@+id/hot_on_snag_grid_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center|center_vertical"
+                    android:clickable="true"
+                    android:padding="@dimen/imgQue_padding"
+                   android:background="@drawable/homegrid_row_image_selector"
+                    android:layout_marginRight="@dimen/margin"
+                    android:src="@drawable/grid_unselected" />
+
+                <View
+                    android:id="@+id/separator"
+                    android:layout_width="@dimen/seperator_width"
+                    android:layout_height="@dimen/frag_seperator_height"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_marginTop="@dimen/sep_margin_top"
+                    android:layout_toLeftOf="@id/hot_on_snag_grid_image"
+                    android:background="@color/grey"
+                    android:layout_marginLeft="@dimen/sep_margin_left"
+                    android:layout_marginRight="@dimen/sep_margin_right" />
+
+                <ImageView
+                    android:id="@+id/hot_on_snag_row_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/separator"
+                    android:paddingTop="5dip"
+                    android:src="@drawable/row_selected" />
+<!-- <RelativeLayout
+                    android:id="@+id/hotOnSnagListLoadingProgressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/snag_select_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/separator" 
+                    android:visibility="gone">
+
+                    <ProgressBar
+                        android:id="@+id/progressBar2"
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout> -->
+                <air.com.snagfilms.app.component.HorizontalView
+                    android:id="@+id/hot_on_snag_gallery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/snag_select_height"
+                    android:layout_below="@id/hot_on_snag"
+                    android:smoothScrollbar="true" >
+                </air.com.snagfilms.app.component.HorizontalView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/recommended_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom" >
+
+                <TextView
+                    android:id="@+id/recomm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:scaleType="fitEnd"
+                    android:text="@string/Recommended_label"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/label_textSize" />
+
+                <ImageView
+                    android:id="@+id/recomm_grid_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center|center_vertical"
+                    android:clickable="true"
+                   android:padding="@dimen/imgQue_padding"
+                    android:background="@drawable/homegrid_row_image_selector"
+                    android:layout_marginRight="@dimen/margin"
+                    android:src="@drawable/grid_unselected" />
+
+                <View
+                    android:id="@+id/separator"
+                    android:layout_width="@dimen/seperator_width"
+                    android:layout_height="@dimen/frag_seperator_height"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_marginTop="@dimen/sep_margin_top"
+                    android:layout_toLeftOf="@id/recomm_grid_image"
+                    android:background="@color/grey"
+                    android:layout_marginLeft="@dimen/sep_margin_left"
+                    android:layout_marginRight="@dimen/sep_margin_right" />
+
+                <ImageView
+                    android:id="@+id/recomm_row_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/separator"
+                    android:paddingTop="5dip"
+                    android:src="@drawable/row_selected" />
+				<!-- <RelativeLayout
+                    android:id="@+id/recommendedListLoadingProgressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/snag_select_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/separator" 
+                    android:visibility="gone">
+
+                    <ProgressBar
+                        android:id="@+id/progressBar3"
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout> -->
+                <air.com.snagfilms.app.component.HorizontalView
+                    android:id="@+id/recomm_gallery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/snag_select_height"
+                    android:layout_below="@id/recomm"
+                    android:smoothScrollbar="true" >
+                </air.com.snagfilms.app.component.HorizontalView>
+            </RelativeLayout>
+        </LinearLayout>
+    </air.com.snagfilms.app.component.VerticalScrollView>
+
+</LinearLayout>

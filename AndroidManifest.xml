@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.snagfilms.filmrise"
+    android:versionCode="3032000"
+    android:versionName="3.3" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="true" >
+    </uses-feature>
+
+    <uses-permission android:name="com.sec.android.permission.PERSONAL_MEDIA" />
+    <uses-permission android:name="com.android.setting.permission.ALLSHARE_CAST_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- Push Notification Permissions -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.snagfilms.filmrise.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.snagfilms.filmrise.permission.C2D_MESSAGE" />
+
+    <permission
+        android:name="com.snagfilms.filmrise.permission.UA_DATA"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.snagfilms.filmrise.permission.UA_DATA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- End of permission list for push Notification -->
+    <!-- Badge permissions -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+    <!-- End of badge permissions -->
+    <application
+        android:name="air.com.snagfilms.app.Controller"
+        android:allowBackup="false"
+        android:icon="@drawable/snagfilms_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true" >
+        <receiver android:name="air.com.snagfilms.app.listeners.HdmiListener" >
+            <intent-filter>
+                <action android:name="android.intent.action.HDMI_PLUGGED" />
+            </intent-filter>
+        </receiver>
+
+        <!--
+        <activity
+            android:name="air.com.snagfilms.views.SplashActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+           >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+
+        <activity
+            android:name="air.com.snagfilms.activities.HomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|fontScale"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.snagfilms.com"
+                    android:pathPrefix="/films/title"
+                    android:scheme="http" />
+                <data
+                    android:host="www.snagfilms.com"
+                    android:pathPrefix="/films/trailer/title"
+                    android:scheme="http" />
+                <data
+                    android:host="www.snagfilms.com"
+                    android:pathPrefix="/show"
+                    android:scheme="http" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="com.sec.android.airview.HOVER" />
+            </intent-filter>
+        </activity>
+        <!--
+        <activity android:name="air.com.snagfilms.views.ChromeCastActivity" >
+         <intent-filter>
+                 
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+        </activity>
+        -->
+
+        <activity
+            android:name="air.com.snagfilms.activities.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|fontScale"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <data
+                    android:host="snagfilms"
+                    android:scheme="oauth" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="air.com.snagfilms.app.videoplayer.VideoPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|fontScale" />
+        <activity android:name="air.com.snagfilms.views.fragments.SignupWebViewFragment" />
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="air.com.snagfilms.activities.AboutSnagfilmActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <!-- Push Notification -->
+        <activity android:name="com.urbanairship.actions.ActionActivity" />
+        <activity
+            android:name="com.urbanairship.actions.LandingPageActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.urbanairship.actions.SHOW_LANDING_PAGE_INTENT_ACTION" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.urbanairship.CoreReceiver" />
+        <receiver
+            android:name="air.com.snagfilms.app.PushNotificationReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.snagfilms.filmrise" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.urbanairship.push.GCMPushReceiver" />
+        <receiver android:name="air.com.snagfilms.app.AirShipReceiver" />
+
+        <service
+            android:name="com.urbanairship.push.PushService"
+            android:label="Push Notification Service" />
+        <service
+            android:name="com.urbanairship.analytics.EventService"
+            android:label="Event Service" />
+        <service android:name="com.urbanairship.actions.ActionService" />
+
+        <provider
+            android:name="com.urbanairship.UrbanAirshipProvider"
+            android:authorities="com.snagfilms.filmrise.urbanairship.provider"
+            android:exported="true"
+            android:multiprocess="true"
+            android:permission="com.snagfilms.filmrise.permission.UA_DATA" />
+
+        <receiver android:name="air.com.snagfilms.cast.chromecast.notifications.VideoIntentReceiver" >
+            <intent-filter>
+                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="air.com.snagfilms.cast.chromecast.action.toggleplayback" />
+                <action android:name="air.com.snagfilms.cast.chromecast.action.stop" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="air.com.snagfilms.cast.chromecast.notifications.VideoCastNotificationService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="air.com.snagfilms.cast.chromecast.action.toggleplayback" />
+                <action android:name="air.com.snagfilms.cast.chromecast.action.stop" />
+                <action android:name="air.com.snagfilms.cast.chromecast.action.notificationvisibility" />
+            </intent-filter>
+        </service>
+        <!-- End of Push Notification -->
+
+        <provider
+            android:name="air.com.snagfilms.app.provider.MovieSuggestionProvider"
+            android:authorities="com.snagfilms.filmrise.app.provider.MovieSuggestionProvider"
+            android:syncable="false" />
+
+        <!-- Apptentive -->
+        <meta-data
+            android:name="apptentive_api_key"
+            android:value="5efc04cb5180a9bb41b95a24a8264a21bd26f45e056929f29efda9bdfe717b1c" />
+
+        <activity
+            android:name="com.apptentive.android.sdk.ViewActivity"
+            android:theme="@style/Apptentive.Theme.Transparent" />
+
+        <receiver android:name="com.apptentive.android.sdk.comm.NetworkStateReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="air.com.snagfilms.activities.SplashScreenActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+"
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="0d0c8d8a4a2cbdedfd8f6e7c1a0feac8bfb92a39" />
+    </application>
+
+</manifest>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="more_dialog_fragment_width_ratio">55</integer>
+    <integer name="more_dialog_fragment_height_ratio">9362</integer>
+    <integer name="detail_fragment_grade_position">2</integer>
+    <integer name="detail_fragment_maingrade_position">0</integer>
+    <integer name="dialog_width_divide_ratio">100</integer>
+    <integer name="dialog_height_divide_ratio">10000</integer>
+    <integer name="sub_header_detail">16</integer>
+    <integer name="body_detail_more_mob">12</integer>
+    <integer name="body_detail_more_tab">13</integer>
+    <integer name="cast_crew_col_margin_detail_mob">5</integer>
+	<integer name="cast_crew_col_margin_detail_tab">10</integer>
+	
+</resources>

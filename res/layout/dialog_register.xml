@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/register_account"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/margin"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/register_account"
+            android:textColor="@color/body_text_primary"
+            android:textSize="@dimen/all_media_sub_header_text_size" />
+
+        <TextView
+            android:id="@+id/register_error_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/register_account"
+            android:layout_marginTop="@dimen/margintop"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/red"
+            android:textSize="@dimen/all_media_body_text_size" />
+
+        <air.com.snagfilms.app.component.ClearEditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_error_msg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margindouble"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:paddingTop="@dimen/edittext_padding"
+            android:textColor="@color/body_text_primary"
+            android:textSize="@dimen/all_media_body_text_size" />
+
+        <air.com.snagfilms.app.component.ClearEditText
+            android:id="@+id/register_email_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="@dimen/edit_margintop"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/email"
+            android:inputType="text"
+            android:paddingTop="@dimen/edittext_padding"
+            android:textColor="@color/body_text_primary"
+            android:textSize="@dimen/all_media_body_text_size" >
+        </air.com.snagfilms.app.component.ClearEditText>
+
+        <RelativeLayout
+            android:id="@+id/repasswordlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/register_email_address"
+            android:layout_marginTop="@dimen/margin_password_top" >
+
+            <air.com.snagfilms.app.component.ClearEditText
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/checkbox_text"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="@dimen/password_right"
+                android:layout_toLeftOf="@+id/checkbox_text"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingTop="@dimen/edittext_padding"
+                android:textColor="@color/body_text_primary"
+                android:textSize="@dimen/all_media_body_text_size" />
+
+            <air.com.snagfilms.app.component.ClearEditText
+                android:id="@+id/repassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/password"
+                android:layout_marginRight="@dimen/password_right"
+                android:layout_marginTop="@dimen/edit_margintop"
+                android:layout_toLeftOf="@+id/checkbox_text"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/repassword"
+                android:inputType="textPassword"
+                android:paddingTop="@dimen/edittext_padding"
+                android:textColor="@color/body_text_primary"
+                android:textSize="@dimen/all_media_body_text_size" />
+
+            <CheckBox
+                android:id="@+id/hide_passsword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@+id/password"
+                android:layout_marginBottom="@dimen/checkbox_marginbottom"
+                android:layout_marginTop="@dimen/margintop_checkbox"
+                android:checked="true" />
+
+            <TextView
+                android:id="@+id/checkbox_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/hide_passsword"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/hide"
+                android:textColor="@color/body_text_primary"
+                android:textSize="@dimen/all_media_body_text_size" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/buton_height"
+            android:layout_below="@+id/repasswordlayout"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="@dimen/margin"
+            android:background="@drawable/button_selector"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/register"
+            android:textColor="@color/welcome_button_text_color"
+            android:textSize="@dimen/welcome_button_text_size" />
+    </RelativeLayout>
+
+</LinearLayout>

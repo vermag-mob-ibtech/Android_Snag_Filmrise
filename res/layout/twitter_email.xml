@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+<RelativeLayout
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:layout_marginTop="@dimen/margin_top"
+    android:layout_marginBottom="@dimen/margin_bottom"
+    android:layout_marginLeft="@dimen/margin_left"
+    android:layout_marginRight="@dimen/marginright" >
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/emailfortwitter"
+        android:textStyle="bold" 
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+   
+	<TextView
+	    android:id="@+id/username"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/tv1"
+	   
+	    android:textColor="@color/black"
+	    android:layout_marginLeft="@dimen/margin_left"
+	    android:textSize="@dimen/textsize_dialog" />
+	
+	<TextView
+	    android:id="@+id/username_value"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/tv1"
+	    android:textColor="@color/black"
+	    android:layout_marginLeft="@dimen/margin_left"
+	    android:textSize="@dimen/textsize_dialog" />
+
+	<EditText 
+	    android:id="@+id/emailaddress"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="@string/email"
+	    android:layout_below="@+id/username"
+	    android:inputType="text"
+	    android:textColor="@color/black"
+	    />
+
+	  <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_below="@id/emailaddress"
+        android:background="@drawable/button_selector"
+        android:text="@string/submit"
+        android:textSize="@dimen/textsize_dialog"
+        android:textColor="@color/white"
+        android:textStyle="bold" 
+        />
+</RelativeLayout>
+	</LinearLayout>

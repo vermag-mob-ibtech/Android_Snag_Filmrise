@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <fragment
+        android:id="@+id/snag_select_fragment"
+        android:name="air.com.snagfilms.views.fragments.SnagFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/frag_margin_left"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_weight="1" >
+    </fragment>
+    
+          
+  <!--       <fragment
+        android:id="@+id/hot_on_snag_fragment"
+        android:name="air.com.snagfilms.views.fragments.HotOnSnagFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="2" />
+        
+   -->
+    
+
+</LinearLayout>

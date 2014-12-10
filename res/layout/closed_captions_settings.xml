@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/margin_setting"
+    android:layout_marginRight="@dimen/margin_setting"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_standard_options"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/set_h"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:text="@string/standard_options"
+        android:textColor="@color/body_text_primary"
+        android:textSize="@dimen/text_settings_header"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/v_horizontal_standard"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/view_height_setting"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/ll_text_size"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/categories_phone_selector"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_text_size"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/text_settings_height"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="@string/text_size"
+            android:textColor="@color/body_text_primary"
+            android:textSize="@dimen/text_settings_sub" />
+
+        <TextView
+            android:id="@+id/tv_selected_text_size"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="@string/selected_text_Size"
+            android:textColor="@color/body_text_primary"
+            android:textSize="@dimen/text_settings_header" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/view_settings_height_sub"
+        android:layout_marginTop="@dimen/text_settings_margin_top"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/ll_caption_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/categories_phone_selector"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_caption_style"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/text_settings_height"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="@string/caption_style"
+            android:textColor="@color/body_text_primary"
+            android:textSize="@dimen/text_settings_sub" />
+
+        <TextView
+            android:id="@+id/tv_selected_caption_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="@string/selected_caption_style"
+            android:textColor="@color/body_text_primary"
+            android:textSize="@dimen/text_settings_header" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- dialog strings -->
+    
+    <string name="register_account">Register For A filmrise Account, Become Cool Instantly</string>
+     <string name="forgot_password">Reset Password</string>
+    
+    
+</resources>

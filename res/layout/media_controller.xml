@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_for_settings"
+        android:layout_width="@dimen/settings_width"
+        android:layout_height="@dimen/settings_height"
+        android:layout_gravity="right"
+        android:background="@color/media_grey"
+        android:clickable="true"
+        android:orientation="vertical" 
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_english_off"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_sections_height" >
+
+            <RelativeLayout
+                android:id="@+id/rl_english"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" >
+
+                <TextView
+                    android:id="@+id/tv_closed_captions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/player_margin"
+                    android:layout_marginLeft="@dimen/margin_caption"
+                    android:layout_marginRight="@dimen/margin_caption"
+                    android:text="@string/closed_captions"
+                    android:textColor="@color/settings_header_color"
+                    android:textSize="@dimen/player_settings_title" 
+                    android:fontFamily="sans-serif-light"/>
+
+                <TextView
+                    android:id="@+id/tv_english"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_closed_captions"
+                    android:layout_marginLeft="@dimen/settings_sub"
+                    android:clickable="true"
+                    android:text="@string/english"
+                    android:textColor="@color/settings_header_color"
+                    android:textSize="@dimen/player_sub_items" 
+                    android:fontFamily="sans-serif-light"/>
+
+                <TextView
+                    android:id="@+id/tv_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_closed_captions"
+                    android:layout_marginLeft="@dimen/player_margin_off"
+                    android:layout_toRightOf="@id/tv_english"
+                    android:clickable="true"
+                    android:text="@string/off"
+                    android:textColor="@color/settings_selected_text"
+                    android:textSize="@dimen/player_sub_items" 
+                    android:fontFamily="sans-serif-light"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/v_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/view_height"
+            android:background="@color/white"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/rl_full_wide"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_sections_height" >
+
+            <RelativeLayout
+                android:id="@+id/rl_full"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" >
+
+                <TextView
+                    android:id="@+id/tv_screen_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/player_margin"
+                    android:text="@string/screen_size"
+                    android:textColor="@color/settings_header_color"
+                    android:textSize="@dimen/player_settings_title" 
+                    android:fontFamily="sans-serif-light"/>
+
+                <TextView
+                    android:id="@+id/tv_full"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_screen_size"
+                   	android:layout_marginLeft="@dimen/settings_sub"
+                    android:clickable="true"
+                    android:text="@string/full"
+                    android:textColor="@color/settings_header_color"
+                    android:textSize="@dimen/player_sub_items"
+                    android:fontFamily="sans-serif-light" />
+
+                <TextView
+                    android:id="@+id/tv_wide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_screen_size"
+                    android:layout_marginLeft="@dimen/player_margin_wide"
+                    android:layout_toRightOf="@id/tv_full"
+                    android:clickable="true"
+                    android:text="@string/wide"
+                    android:textColor="@color/settings_selected_text"
+                    android:textSize="@dimen/player_sub_items" 
+                    android:fontFamily="sans-serif-light"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/media_grey"
+       >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/media_top_height"
+           	android:layout_marginLeft="@dimen/rl_media_left"
+            >
+            <ImageButton
+                android:id="@+id/pause"
+                style="@style/custommediabutton"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/description"
+                android:src="@drawable/play_icon" />
+
+            <TextView
+                android:id="@+id/time_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/current_time_margin"
+                android:layout_marginRight="@dimen/current_right_margin"
+                android:layout_toRightOf="@+id/pause"
+                android:gravity="center|center_vertical"
+                android:textColor="@color/body_text_secondary"
+                android:fontFamily="sans-serif-light" 
+                android:textSize="@dimen/textsize_media_time" />
+
+            <RelativeLayout
+                android:id="@+id/seekbar_container"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/time"
+                android:layout_toRightOf="@+id/time_current" >
+
+                <air.com.snagfilms.app.component.CustomSeekBar
+                    android:id="@+id/mediacontroller_progress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:max="0"
+                    android:maxHeight="@dimen/media_seekabr_maxHeight"
+                    android:minHeight="@dimen/media_seekabr_minHeigth"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/seekbar_progress"
+                    android:secondaryProgress="0"
+                    android:thumb="@drawable/progressbar_circle" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="@dimen/current_right_margin"
+                android:layout_toLeftOf="@+id/settings"
+                android:textColor="@color/body_text_secondary"
+                android:fontFamily="sans-serif-light" 
+                android:textSize="@dimen/textsize_media_time" />
+
+            <ImageButton
+                android:id="@+id/settings"
+                style="@style/custommediabutton"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/settings_left_media"
+                android:layout_marginRight="@dimen/settings_right_media"
+                android:contentDescription="@string/description"
+                android:src="@drawable/settings_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

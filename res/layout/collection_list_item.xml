@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/movie_thumbnail"
+        android:layout_width="@dimen/snag_select_image_width"
+        android:layout_height="@dimen/snag_select_image_height"
+        android:layout_marginBottom="@dimen/dynamic_lead_poster_bottom_margin"
+        android:layout_marginLeft="@dimen/half_snag_select_margin_left"
+        android:layout_marginRight="@dimen/half_snag_select_margin_right"
+        android:layout_marginTop="@dimen/dynamic_lead_poster_top_margin"
+        android:background="@drawable/image_shadow_selector" />
+
+    <TextView
+        android:id="@+id/snag_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/movie_thumbnail"
+        android:layout_marginLeft="@dimen/list_item_text_marginLeft"
+        android:layout_marginTop="@dimen/list_item_text_marginTop"
+        android:layout_toRightOf="@+id/movie_thumbnail"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-light"
+        android:singleLine="true"
+        android:textColor="@color/body_text_primary"
+        android:textSize="@dimen/dynamiclead_title_text_size" />
+
+</RelativeLayout>

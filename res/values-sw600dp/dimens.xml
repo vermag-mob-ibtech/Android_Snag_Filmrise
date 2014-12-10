@@ -1,0 +1,185 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+    -->
+
+    <dimen name="imagewidth">100dp</dimen>
+
+    <!-- common dialog dimensions -->
+    <dimen name="textsize_dialog">25sp</dimen>
+    <dimen name="textsize_subTitle">20sp</dimen>
+    <dimen name="dialog_text_width">250dp</dimen>
+    <dimen name="margintop">10dp</dimen>
+    <dimen name="edittext_top">0dp</dimen>
+    <dimen name="button_top">25sp</dimen>
+    <dimen name="edittextsize_email">450dp</dimen>
+    <dimen name="edittextsize_password">270dp</dimen>
+    <dimen name="marginleft">50dp</dimen>
+    <dimen name="marginright">30dp</dimen>
+    <dimen name="text_image_gap">5dp</dimen>
+    <dimen name="marginskip_text">5dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="sub_textsize">20dp</dimen>
+    <dimen name="horizontalline">1dp</dimen>
+    <dimen name="buttonmarginleft">10dp</dimen>
+    <dimen name="marginTopRow">15dp</dimen>
+    <dimen name="browsebuttonheight">50dp</dimen>
+    <dimen name="registerButtonheight">150dp</dimen>
+    <dimen name="browsebuttonwidth">400dp</dimen>
+    <dimen name="buttonspacing">50dp</dimen>
+    <dimen name="textsizeofdiscover">30sp</dimen>
+    <dimen name="edittext_width">475dp</dimen>
+
+    <!-- dimension for dynamic lead -->
+
+    <dimen name="dyanmiclead_height">180dp</dimen>
+    <dimen name="gallery_height">180dp</dimen>
+    <dimen name="snag_select_height">170dp</dimen>
+
+    <!-- dimens for Snagfilm logo in logo_actionbar.xml -->
+    <dimen name="logo_left">24dp</dimen>
+
+    <!-- Detail screen Tab -->
+    <dimen name="textsize_body_detail">13sp</dimen>
+    <dimen name="imagewidth_detail">181dp</dimen>
+    <dimen name="imageheight_detail">264dp</dimen>
+    <dimen name="trailer_textsize_detail">20sp</dimen>
+    <dimen name="trailer_film_text">13sp</dimen>
+    <dimen name="related_textsize_detail">20sp</dimen>
+    <dimen name="related_film_text">13sp</dimen>
+    <dimen name="button_oval_width">44dp</dimen>
+    <dimen name="small_margin_detail">5dp</dimen>
+    <dimen name="margin_detail">20dp</dimen>
+    <dimen name="left_margin_detail">25dp</dimen>
+    <dimen name="big_margin_detail">15dp</dimen>
+    <dimen name="margin_trailer_detail">15dp</dimen>
+    <dimen name="margin_trailers_clips_detail">20dp</dimen>
+    <dimen name="margin_related_detail">15dp</dimen>
+    <dimen name="margin_related_clips_detail">25dp</dimen>
+    <dimen name="margin_btnwatch_detail">14dp</dimen>
+    <dimen name="margin_btnqueue_detail">12dp</dimen>
+    <dimen name="imagelistheight_trailerdetail">115dp</dimen>
+    <dimen name="imagelistheight_detail">170dp</dimen>
+    <dimen name="imagewidth_relatedfilms_detail">86dp</dimen>
+    <dimen name="imageheight_relatedfilms_detail">126dp</dimen>
+    <dimen name="imagewidth_trailers_clips_detail">128dp</dimen>
+    <dimen name="imageheight_trailers_clips_detail">71dp</dimen>
+    <dimen name="det_tab_rl_data_height">337dp</dimen>
+    <dimen name="filmtitle_height_dialog_detail">45dp</dimen>
+    <dimen name="margin_detail_more">7dp</dimen>
+
+    <!-- More Detail -->
+    <dimen name="scroll_height_detail_more_tab">570dp</dimen>
+
+    <!-- dimen for activity_login action bar -->
+    <dimen name="snagfilm_logo_left">34dp</dimen>
+    <dimen name="btn_browse_right">26dp</dimen>
+
+    <!-- dimens for captions_dialog.xml -->
+    <dimen name="captions_sections_height">48dp</dimen>
+    <dimen name="captions_margin">35dp</dimen>
+    <dimen name="captions_view_height">1dp</dimen>
+    <dimen name="edit_margintop">20dp</dimen>
+    <dimen name="margin_password_top">7dp</dimen>
+
+    <!-- homeGrid -->
+    <dimen name="home_gridview_image_spacing">30dp</dimen>
+    <dimen name="home_gridview_column_width">100dp</dimen>
+    <dimen name="home_grid_image_padding">5dp</dimen>
+    <dimen name="home_grid_separator_width">2dp</dimen>
+    <dimen name="home_grid_separator_height">30dp</dimen>
+    <dimen name="home_grid_grid_image_margin_left">10dp</dimen>
+    <dimen name="home_grid_grid_image_margin_right">20dp</dimen>
+    <dimen name="home_grid_row_image_margin_right">10dp</dimen>
+    <dimen name="home_grid_ad_margin_top">10dp</dimen>
+
+    <!-- homeGrid GridView Item -->
+    <dimen name="grid_view_tv_size">13sp</dimen>
+    <dimen name="alert_dialog_width">500dp</dimen>
+    <dimen name="drawer_padding">20dp</dimen>
+
+    <!-- dimens for media_top_controller.xml -->
+    <dimen name="rl_media_top">40dp</dimen>
+    <dimen name="media_close">25dp</dimen>
+    <dimen name="rl_for_media_seekbar">200dp</dimen>
+    <dimen name="rl_margin_top_bottom">10dp</dimen>
+    <dimen name="seekbar_volume_width">150dp</dimen>
+    <dimen name="tv_margin_title">10dp</dimen>
+    <dimen name="close_margin">10dp</dimen>
+    <dimen name="media_but_width">40dp</dimen>
+
+    <!-- for media_controller.xml -->
+    <dimen name="rl_media_left">20dp</dimen>
+    <dimen name="rl_media_bottom">10dp</dimen>
+    <dimen name="margin_caption">15dp</dimen>
+    <dimen name="view_height">1dp</dimen>
+    <dimen name="current_right_margin">10dp</dimen>
+    <dimen name="current_time_margin">20dp</dimen>
+    <dimen name="settings_left_media">15dp</dimen>
+    <dimen name="settings_right_media">20dp</dimen>
+    <!-- dims for left Navigation -->
+    <dimen name="main_header_text_size">31sp</dimen>
+
+    <!-- Navigation Drawer -->
+    <dimen name="drawer_height">539dp</dimen>
+    <dimen name="drawer_h">290dp</dimen>
+    <dimen name="drawer_width">237dp</dimen>
+    <dimen name="drawer_h_cineroar">240dp</dimen>
+    <dimen name="drawer_section_height">48dp</dimen>
+
+    <!-- Dynamic Lead -->
+    <dimen name="dynamic_lead_left_margin">12.5dp</dimen>
+    <dimen name="dynamiclead_image_width">232dp</dimen>
+    <dimen name="dynamiclead_image_progress_bar_width">222dp</dimen>
+    <dimen name="dynamiclead_image_height">126dp</dimen>
+    <dimen name="half_dynamiclead_image_margin_left">12.5dp</dimen>
+    <dimen name="half_dynamiclead_image_margin_right">3.5dp</dimen>
+    <dimen name="dynamiclead_film_text_size">13sp</dimen>
+
+    <!-- Tray View (Snag Select/hot on snag/recommendation) -->
+    <dimen name="snag_select_image_width">86dp</dimen>
+    <dimen name="snag_select_image_progress_bar_width">76dp</dimen>
+    <dimen name="snag_select_image_height">126dp</dimen>
+    <dimen name="half_snag_select_margin_left">12.5dp</dimen>
+    <dimen name="half_snag_select_margin_right">3.5dp</dimen>
+    <dimen name="snag_select_margin">22dp</dimen>
+    <dimen name="tray_catogories_text_size">31sp</dimen>
+    <dimen name="tray_catogories_title_margin">16dp</dimen>
+
+    <!-- Welcome Screen -->
+    <dimen name="welcome_buttonwidth">215dp</dimen>
+    <dimen name="welcome_buttonheight">48dp</dimen>
+    <dimen name="welcome_button_text_size">18sp</dimen>
+    <dimen name="welcome_header_text_size">20sp</dimen>
+    <dimen name="welcome_sub_header_text_size">16sp</dimen>
+
+    <!-- dimen for share dialog -->
+    <dimen name="share_height">42dp</dimen>
+    <dimen name="textsize_title_share">16sp</dimen>
+    <dimen name="textsize_share_items">13sp</dimen>
+    <dimen name="share_item_margin">50dp</dimen>
+    <dimen name="share_item_image">44dp</dimen>
+    <dimen name="share_title_left_margin">25dp</dimen>
+    <dimen name="share_divider">2dp</dimen>
+
+    <!-- catagories and Channels -->
+    <dimen name="browse_title_margin_left">25dp</dimen>
+    <dimen name="browse_ad_margin_top">10dp</dimen>
+    <dimen name="browse_title_size">31sp</dimen>
+    <dimen name="browse_scroll_margin_top">5dp</dimen>
+    <dimen name="browse_sub_list_margin_right">20dp</dimen>
+    <dimen name="browse_images_margin">10dp</dimen>
+    <dimen name="browse_sub_list_margin_bottom">20dp</dimen>
+    <dimen name="horizontal_view_right_margin">15dp</dimen>
+    <dimen name="horizontal_left_margin">12.5dp</dimen>
+    <dimen name="dynamiclead_title_text_size">20sp</dimen>
+    <dimen name="margin_btnwatch_detail_top">4dp</dimen>
+    <dimen name="half_margin_related_clips_detail">10dp</dimen>
+    <dimen name="half_margin_trailers_clips_detail_left">8dp</dimen>
+    <dimen name="related_trailer_left_margin">14dp</dimen>
+    <dimen name="half_margin_related_clips_detail_right">2dp</dimen>
+    <dimen name="shows_grading_button_width">44dp</dimen>
+
+</resources>

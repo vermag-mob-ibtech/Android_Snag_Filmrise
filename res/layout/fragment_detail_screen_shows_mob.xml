@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_filmtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+       android:layout_marginLeft="@dimen/big_margin_detail"
+        android:clickable="false"
+        android:ellipsize="marquee"
+        android:focusable="false"
+        android:fontFamily="sans-serif-light"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/body_text_primary"
+        android:textSize="@dimen/textsize_hdr_detail" />
+
+    <!-- footer contains Ads -->
+
+    <RelativeLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" > 
+
+        <LinearLayout
+            android:id="@+id/ads_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <air.com.snagfilms.cast.chromecast.widget.MiniController
+            android:id="@+id/miniController1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ads_container"
+            android:background="@drawable/shadow7"
+            android:visibility="gone" >
+        </air.com.snagfilms.cast.chromecast.widget.MiniController>
+    </RelativeLayout>
+
+    <air.com.snagfilms.app.component.VerticalScrollView
+        android:id="@+id/scrollview_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_container"
+        android:layout_below="@id/tv_filmtitle"
+        android:overScrollMode="never" >
+
+        <LinearLayout
+            android:id="@+id/det_ll_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- Film poster -->
+
+            <ImageView
+                android:id="@+id/image_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/imageheight_detail"
+                android:contentDescription="@string/det_image"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/loading_dynamic_lead" />
+
+            <LinearLayout
+                android:id="@+id/main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/big_margin_detail"
+                android:layout_marginRight="@dimen/big_margin_detail"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/det_ll2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/det_rl1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp" >
+
+                        <TextView
+                            android:id="@+id/tv_season_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="X"
+                            android:textColor="@color/sub_header_detail"
+                            android:textSize="@dimen/textsize_body_detail"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/tv_season"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="@string/seasons_text"
+                            android:textColor="@color/body_detail"
+                            android:textSize="@dimen/textsize_body_detail"
+                            android:visibility="visible"
+                            android:layout_marginRight="5dp" />
+
+                        <TextView
+                            android:id="@+id/tv_episode_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Y"
+                            android:textColor="@color/body_detail"
+                            android:textSize="@dimen/textsize_body_detail"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/tv_episode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/seasons_right_margin"
+                            android:fontFamily="sans-serif-light"
+                            android:text="@string/episodes_text"
+                            android:textColor="@color/body_detail"
+                            android:textSize="@dimen/textsize_body_detail"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/tv_snagfilms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/snagfilms"
+                            android:textColor="@color/dark_header_detail"
+                            android:textSize="@dimen/textsize_body_detail"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/tv_grading_fans"
+                            android:layout_width="@dimen/shows_grading_button_width"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_round_corner"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:textColor="@color/btn_text_detail"
+                            android:textSize="@dimen/textsize_btn_detail"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_no_fans"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="@color/btn_detail"
+                            android:textSize="@dimen/textsize_body_detail"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/tv_fans"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/seasons_right_margin"
+                            android:fontFamily="sans-serif-light"
+                            android:text="@string/fans"
+                            android:textColor="@color/btn_detail"
+                            android:textSize="@dimen/textsize_body_detail"
+                            android:visibility="invisible"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/tv_criticwire"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:gravity="right"
+                            android:text="@string/criticwire"
+                            android:textColor="@color/dark_header_detail"
+                            android:textSize="@dimen/textsize_body_detail"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/tv_grading_critic"
+                            android:layout_width="@dimen/shows_grading_button_width"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_round_corner"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:textColor="@color/btn_text_detail"
+                            android:textSize="@dimen/textsize_btn_detail"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                    <!-- Release date info -->
+
+
+                    <!-- Film description -->
+
+                    <TextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="sans-serif-light"
+                        android:maxLines="4"
+                        android:singleLine="false"
+                        android:text="@string/detail_description"
+                        android:textColor="@color/body_detail"
+                        android:textSize="@dimen/textsize_body_detail"
+                        android:visibility="visible" />
+                    <!-- android:layout_marginTop="@dimen/margin_detail" -->
+
+                    <Button
+                        android:id="@+id/tv_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/margin_detail"
+                        android:background="@drawable/more_text_detail"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/more_detail"
+                        android:textColor="@color/btn_detail"
+                        android:textSize="@dimen/textsize_body_detail" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/det_ll3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btn_watchfilm"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="@dimen/seasons_right_margin"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/watch_episode"
+                        android:textColor="@color/btn_text_detail"
+                        android:textSize="@dimen/textsize_btn_detail" />
+
+                    <Button
+                        android:id="@+id/btn_trailer"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="@dimen/seasons_right_margin"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/watch_trailer"
+                        android:textColor="@color/btn_text_detail"
+                        android:textSize="@dimen/textsize_btn_detail" />
+
+                    <Button
+                        android:id="@+id/btn_queue"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/add_queue_button_text"
+                        android:textColor="@color/btn_text_detail"
+                        android:textSize="@dimen/textsize_btn_detail" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/seasons"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/clips"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_margin_detail"
+                android:layout_marginTop="@dimen/margin_related_detail"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/clips"
+                android:textColor="@color/related_text_color"
+                android:textSize="@dimen/related_textsize_detail"
+                android:visibility="visible" />
+
+            <air.com.snagfilms.app.component.HorizontalView
+                android:id="@+id/horizontallistview"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/horizontal_listView_height"
+                android:layout_marginBottom="@dimen/big_margin_detail"
+                android:layout_marginLeft="@dimen/related_trailer_left_margin"
+                android:visibility="visible" />
+        </LinearLayout>
+    </air.com.snagfilms.app.component.VerticalScrollView>
+
+    <ProgressBar
+        android:id="@+id/detailScreenProgress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/noDataMsgDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="sans-serif"
+        android:text="@string/no_info"
+        android:textColor="@color/dark_header_detail"
+        android:textSize="@dimen/textsize_sub_hdr_detail"
+        android:visibility="gone" />
+
+</RelativeLayout>

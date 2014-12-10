@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome_image"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/bar_navigation" >
+
+        <ImageView
+            android:id="@+id/iv_snagfilmlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/snagfilms_logo" />
+
+        <Button
+            android:id="@+id/btn_browse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/btn_browse_right"
+            android:background="@drawable/actionbar_selectable_background"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/skip_icon"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/browse"
+            android:textColor="@color/settings_selected_text"
+            android:textSize="@dimen/skip_textsize" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/btn_browse_right"
+            android:background="@drawable/btn_cross"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadeScrollbars="false"
+        android:layout_below="@+id/relativeLayout1"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_promo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_promoheadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textSize="@dimen/welcome_header_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_sometext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_promoheadline"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-light"
+                android:maxLines="3"
+                android:scrollbars="vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/welcome_header_text_size" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="350dp"
+                android:layout_height="@dimen/welcome_buttonheight"
+                android:layout_below="@+id/tv_sometext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="150dp"
+                android:layout_marginRight="150dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button_selector_welcome_signin"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/start_your_trail"
+                android:textColor="@color/welcome_button_text_color"
+                android:textSize="@dimen/welcome_button_text_size" />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="350dp"
+                android:layout_height="@dimen/welcome_buttonheight"
+                android:layout_below="@+id/btn_login"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="150dp"
+                android:layout_marginRight="150dp"
+                android:layout_marginTop="@dimen/margin"
+                android:background="@drawable/button_selector_welcome_facebook"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/register"
+                android:textColor="@color/welcome_button_text_color"
+                android:textSize="@dimen/welcome_button_text_size" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/fragmentcontainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relativeLayout1"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/img_promo_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/media_grey"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/media_top_height"
+        android:orientation="horizontal"
+         >
+        <LinearLayout 
+             android:id="@+id/selector" 
+             android:layout_width="wrap_content"
+       		 android:layout_height="@dimen/media_top_height"
+       		 android:clickable="true"
+       		 android:background="@drawable/actionbar_selectable_background"
+       		 android:layout_toLeftOf="@+id/seekbarContainer"
+       		 android:layout_alignParentLeft="true"
+            >
+            <ImageButton
+            android:id="@+id/close"
+            style="@style/custommediabutton"
+            android:layout_marginLeft="@dimen/close_margin"
+            android:contentDescription="@string/description"
+            android:src="@drawable/up_button_icon_back" 
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_gravity="center"/>
+            
+            <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/tv_margin_title"
+            android:gravity="left|center"
+            android:textColor="@color/body_text_secondary"
+            android:fontFamily="sans-serif"
+            android:singleLine="true" 
+            android:ellipsize="marquee"
+        	android:marqueeRepeatLimit ="marquee_forever"
+        	android:focusable="false"
+        	android:clickable="false"
+        	android:scrollHorizontally="true" 
+            android:textSize="@dimen/textsize_media"/>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/seekbarContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/media_top_height"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" >
+			
+			<ImageButton
+			    android:id="@+id/media_route_button"
+			    style="@style/custommediabutton"
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:layout_marginLeft="@dimen/share_margin"
+			    android:layout_marginRight="@dimen/share_margin"
+			    android:contentDescription="@string/description"
+			    android:visibility="visible" />
+
+			<ImageButton
+            android:id="@+id/iv_share"
+            style="@style/custommediabutton"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/share_margin"
+            android:layout_marginRight="@dimen/share_margin"
+            android:contentDescription="@string/description"
+            android:src="@drawable/share_icon_player" />
+			
+            <ImageButton
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/bgcolor"
+                android:contentDescription="@string/description"
+                android:src="@drawable/volume_icon" />
+
+            <air.com.snagfilms.app.component.CustomSeekBar
+                android:id="@+id/seekBar1"
+                style="@style/customseekbar"
+                android:layout_width="@dimen/seekbar_volume_width"
+                android:layout_height="wrap_content"
+                android:max="0"
+                android:layout_gravity="center"
+                android:minHeight="@dimen/media_seekabr_minHeigth"
+        		android:maxHeight="@dimen/media_seekabr_maxHeight" 
+        		android:progressDrawable="@drawable/seekbar_progress"
+                android:paddingBottom="@dimen/seekbar_padding_bottom"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingTop="@dimen/seekabr_padding_top"
+                android:thumb="@drawable/volume_thumb"
+                android:progress="0" />
+
+        </LinearLayout>
+
+        </RelativeLayout>
+</LinearLayout>

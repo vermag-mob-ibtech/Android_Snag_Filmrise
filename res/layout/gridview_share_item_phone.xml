@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_image_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/share_item_margin"
+        android:layout_marginTop="@dimen/share_item_margin" >
+
+        <ImageView
+            android:id="@+id/iv_share_app"
+            android:layout_width="@dimen/share_item_image"
+            android:layout_height="@dimen/share_item_image"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/description" />
+
+        <TextView
+            android:id="@+id/tv_text_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_share_app"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/body_text_secondary"
+            android:textSize="@dimen/textsize_share_items" />
+    </RelativeLayout>
+
+</RelativeLayout>

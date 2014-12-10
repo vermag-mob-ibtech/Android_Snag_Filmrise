@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Detail screen Tab -->
+    <dimen name="det_tab_rl_data_height">182dp</dimen>
+
+    <!-- homeGrid -->
+    <dimen name="homegridview_column_width">150dp</dimen>
+
+    <!-- dims for left Navigation -->
+    <dimen name="drawer_width">235dp</dimen>
+    <dimen name="drawer_height">476dp</dimen>
+    <dimen name="drawer_h">290dp</dimen>
+    <dimen name="drawer_h_cineroar">240dp</dimen>
+
+    <!-- dimens for activity_login action bar -->
+    <dimen name="btn_browse_right">36dp</dimen>
+
+</resources>

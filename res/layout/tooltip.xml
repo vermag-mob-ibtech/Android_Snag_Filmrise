@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/tooltip_topframe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tooltip_top_frame"
+        android:layout_marginTop="@dimen/margintop" />
+
+    <ImageView
+        android:id="@+id/tooltip_pointer_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tooltip_arrow_up" />
+
+    <FrameLayout
+        android:id="@+id/tooltip_contentholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_below="@id/tooltip_topframe"
+        android:layout_marginTop="@dimen/tooltip_layout_marginTop"
+        android:paddingLeft="@dimen/tooltip_padding_left"
+        android:paddingRight="@dimen/tooltip_padding_right"
+        android:scrollbars="none">
+
+        <TextView
+            android:id="@+id/tooltip_contenttv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/tooltip_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tooltip_shadow_height"
+        android:background="@drawable/quickcontact_drop_shadow"
+        android:layout_below="@id/tooltip_contentholder"
+        android:layout_marginTop="@dimen/tooltip_shadow_marginTop" />
+
+    <FrameLayout
+        android:id="@+id/tooltip_bottomframe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tooltip_bottom_frame"
+        android:layout_below="@id/tooltip_contentholder" />
+
+    <ImageView
+        android:id="@+id/tooltip_pointer_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tooltip_bottomframe"
+        android:layout_marginTop="@dimen/tooltip_img_marginTop"
+        android:src="@drawable/tooltip_arrow_down" />
+
+
+</RelativeLayout>

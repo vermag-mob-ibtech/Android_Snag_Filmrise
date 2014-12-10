@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/videoSurfaceContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <SurfaceView
+        android:id="@+id/videoSurface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center_vertical|center_horizontal" />
+
+	<TextView
+	    android:id="@+id/timedText"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="bottom|center_horizontal"
+	    android:layout_marginBottom="@dimen/media_top_height"
+	    android:textAlignment="center"
+	    android:textColor="@color/white" />
+
+</FrameLayout>
