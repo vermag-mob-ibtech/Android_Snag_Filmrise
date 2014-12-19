@@ -5,7 +5,7 @@
     android:versionName="3.3" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="17"
         android:targetSdkVersion="19" />
 
     <uses-feature
@@ -31,6 +31,9 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
     <permission
+        android:name="com.snagfilms.filmrise.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+	<permission
         android:name="com.snagfilms.filmrise.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
