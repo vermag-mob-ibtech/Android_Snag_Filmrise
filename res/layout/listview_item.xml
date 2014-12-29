@@ -45,7 +45,7 @@
         android:layout_marginLeft="@dimen/half_snag_select_margin_left"
         android:ellipsize="end"
         android:singleLine="true"
-        android:textColor="@color/body_text_primary"
+        android:textColor="@color/snag_title_text_color"
         android:textSize="@dimen/dynamiclead_film_text_size"
         android:fontFamily="sans-serif-light"  />
 

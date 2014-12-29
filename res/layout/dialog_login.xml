@@ -3,12 +3,13 @@
     android:id="@+id/main_layout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/white"
+    android:background="@color/login_screen_bg_color"
     android:orientation="vertical" >
 
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        android:clickable="true"
         android:orientation="vertical" >
 
         <Button
@@ -22,8 +23,10 @@
             android:background="@drawable/button_selector_facebook"
             android:fontFamily="sans-serif-light"
             android:text="@string/logintext"
-            android:textColor="@color/welcome_button_text_color"
-            android:textSize="@dimen/welcome_button_text_size" />
+            android:textColor="@color/login_screen_btn_facebook_text_color"
+            android:textSize="@dimen/welcome_button_text_size"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
 
         <TextView
             android:id="@+id/text_or"
@@ -31,6 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/btn_facebook"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/login_screen_or_text_color"
             android:layout_marginTop="@dimen/margin_top"
             android:text="@string/or" />
 
@@ -43,12 +47,13 @@
             android:layout_marginLeft="@dimen/margin"
             android:layout_marginRight="@dimen/margin"
             android:layout_marginTop="@dimen/margin"
+            android:background="@drawable/apptheme_edit_text_holo_light"
             android:fontFamily="sans-serif-light"
             android:hint="@string/email"
             android:inputType="text"
             android:paddingTop="@dimen/edittext_padding"
             android:tag="@string/email"
-            android:textColor="@color/body_text_primary"
+            android:textColor="@color/login_screen_user_name_text_color"
             android:textSize="@dimen/all_media_body_text_size" />
 
         <RelativeLayout
@@ -67,13 +72,14 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginTop="@dimen/margintop"
                 android:layout_toLeftOf="@+id/checkbox_text"
+                android:background="@drawable/apptheme_edit_text_holo_light"
                 android:fontFamily="sans-serif-light"
                 android:hint="@string/password"
                 android:imeOptions="actionDone"
                 android:inputType="textPassword|textNoSuggestions"
                 android:paddingTop="@dimen/edittext_padding"
                 android:tag="@string/password"
-                android:textColor="@color/body_text_primary"
+                android:textColor="@color/login_screen_password_text_color"
                 android:textSize="@dimen/all_media_body_text_size" />
 
             <CheckBox
@@ -105,7 +111,7 @@
             android:layout_width="fill_parent"
             android:layout_height="@dimen/footer_height"
             android:layout_alignParentBottom="true"
-            android:background="@color/bar_navigation"
+            android:background="@color/login_footer_color"
             android:orientation="horizontal"
             android:weightSum="2" >
 
@@ -120,7 +126,7 @@
                 android:background="@drawable/button_selector"
                 android:fontFamily="sans-serif-light"
                 android:text="@string/login"
-                android:textColor="@color/welcome_button_text_color"
+                android:textColor="@color/login_screen_btn_login_text_color"
                 android:textSize="@dimen/welcome_button_text_size" />
 
             <Button
@@ -134,8 +140,9 @@
                 android:background="@android:color/transparent"
                 android:onClick="true"
                 android:text="@string/forgotpassword"
-                android:textColor="@color/settings_selected_text" />
+                android:textColor="@color/help_text_color" />
         </LinearLayout>
+
     </RelativeLayout>
 
 </LinearLayout>

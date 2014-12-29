@@ -48,7 +48,7 @@
                 android:layout_marginLeft="@dimen/browse_title_margin_left"
                 android:fontFamily="sans-serif-light"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="@color/body_text_primary"
+                android:textColor="@color/browse_fragment_title_phone_text_color"
                 android:textSize="@dimen/browse_title_size_phone" />
             <!-- android:textSize="@dimen/browse_title_size_phone" -->
 
@@ -58,7 +58,7 @@
                 android:layout_height="@dimen/horizontalline_height"
                 android:layout_below="@+id/browseTitlePhone"
                 android:layout_marginTop="@dimen/small_margin_detail"
-                android:background="@color/grey" />
+                android:background="@color/browse_fragment_line_color" />
         </RelativeLayout>
 
         <air.com.snagfilms.app.component.VerticalScrollView

@@ -20,7 +20,7 @@
         android:scrollHorizontally="true"
         android:singleLine="true"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/body_text_primary"
+        android:textColor="@color/phone_more_detail_screen_movie_title_color"
         android:textSize="@dimen/textsize_hdr_detail" />
 
     <View
@@ -29,7 +29,7 @@
         android:layout_height="@dimen/horizontalline"
         android:layout_marginBottom="@dimen/big_margin_detail"
         android:layout_marginTop="@dimen/small_margin_detail"
-        android:background="@color/grey" />
+        android:background="@color/phone_more_detail_screen_line_color" />
 
     <ScrollView
         android:id="@+id/scrollview_detail_more"
@@ -56,7 +56,7 @@
                     android:layout_alignParentLeft="true"
                     android:fontFamily="sans-serif"
                     android:text="@string/snagfilms"
-                    android:textColor="@color/dark_header_detail"
+                    android:textColor="@color/phone_more_detail_screen_title_color"
                     android:textSize="@dimen/textsize_sub_hdr_detail"
                     android:visibility="gone" />
 
@@ -139,7 +139,7 @@
                     android:layout_alignParentLeft="true"
                     android:fontFamily="sans-serif-light"
                     android:text="@string/releasedate"
-                    android:textColor="@color/sub_header_detail"
+                    android:textColor="@color/phone_more_detail_screen_release_date_text_color"
                     android:textSize="@dimen/textsize_sub_hdr_detail"
                     android:visibility="visible" />
 
@@ -151,7 +151,7 @@
                     android:layout_marginLeft="@dimen/big_margin_detail"
                     android:layout_toRightOf="@id/tv_more_releasedate"
                     android:fontFamily="sans-serif-light"
-                    android:textColor="@color/body_detail"
+                    android:textColor="@color/phone_more_detail_screen_date_text_color"
                     android:textSize="@dimen/textsize_body_detail"
                     android:visibility="visible" />
             </RelativeLayout>
@@ -162,7 +162,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_detail_layout"
                 android:fontFamily="sans-serif-light"
-                android:textColor="@color/body_detail"
+                android:textColor="@color/phone_more_detail_screen_time_text_color"
                 android:textSize="@dimen/textsize_body_detail"
                 android:visibility="visible" />
 
@@ -174,7 +174,7 @@
                 android:layout_marginTop="@dimen/margin_tv_description_detail"
                 android:fontFamily="sans-serif-light"
                 android:singleLine="false"
-                android:textColor="@color/body_detail"
+                android:textColor="@color/phone_more_detail_screen_desc_text_color"
                 android:textSize="@dimen/textsize_body_detail"
                 android:visibility="visible" />
 
@@ -225,7 +225,7 @@
             android:layout_height="fill_parent"
             android:layout_marginLeft="@dimen/img_marginLeft"
             android:layout_toRightOf="@+id/img_play"
-            android:background="@color/white" />
+            android:background="@color/phone_more_detail_line_color" />
 
         <RelativeLayout
             android:layout_width="fill_parent"
@@ -273,7 +273,7 @@
             android:layout_height="fill_parent"
             android:layout_marginLeft="@dimen/imgQue_marginLeft"
             android:layout_toRightOf="@+id/img_queue"
-            android:background="@color/white" />
+            android:background="@color/phone_more_detail_line_color" />
 
         <RelativeLayout
             android:layout_width="fill_parent"

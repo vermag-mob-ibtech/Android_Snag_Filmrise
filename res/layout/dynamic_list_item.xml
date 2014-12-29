@@ -41,7 +41,7 @@
         android:background="?android:attr/activatedBackgroundIndicator"
         android:ellipsize="end"
         android:singleLine="true"
-        android:textColor="@color/body_text_primary"
+        android:textColor="@color/dymanic_lead_title_text_color"
         android:textSize="@dimen/dynamiclead_film_text_size"
         android:fontFamily="sans-serif-light" 
         />

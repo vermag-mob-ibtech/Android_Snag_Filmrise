@@ -68,7 +68,7 @@
                     android:fontFamily="sans-serif-light"
                     android:scaleType="fitEnd"
                     android:text="@string/dynamic_lead_label"
-                    android:textColor="@color/body_text_primary"
+                    android:textColor="@color/fragment_home_featured_title"
                     android:textSize="@dimen/dynamiclead_title_text_size" />
 
                 <air.com.snagfilms.app.component.HorizontalView
@@ -154,13 +154,14 @@
                         android:padding="@dimen/home_grid_image_padding"
                         android:src="@drawable/grid_unselected" />
 
-                    <View
-                        android:id="@+id/separator_for_recomm"
-                        android:layout_width="@dimen/seperator_width"
-                        android:layout_height="@dimen/frag_seperator_height"
-                        android:layout_centerVertical="true"
-                        android:layout_toLeftOf="@id/recomm_grid_image"
-                        android:background="@color/grey" />
+                    
+                      <View
+              android:id="@+id/separator_for_recomm"
+            android:layout_width="@dimen/small_margin_detail"
+            android:layout_height="@dimen/frag_marginHeight"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/recomm_grid_image"
+            android:background="@color/grey" />
 
                     <ImageView
                         android:id="@+id/recomm_row_image"

@@ -204,6 +204,7 @@
     <dimen name="web_width">400dp</dimen>
     <dimen name="web_height">600dp</dimen>
     <dimen name="margindouble">20dp</dimen>
+    <dimen name="margin_age_top">10dp</dimen>
 
     <!-- dimensions for dialog login.xml -->
     <dimen name="buton_login_marginLeft">30dp</dimen>
@@ -254,14 +255,15 @@
 
     <!-- dimens for settings.xml -->
     <dimen name="margin_setting">30dp</dimen>
-    <dimen name="text_settings_header">13sp</dimen>
+    <dimen name="text_settings_header">15sp</dimen>
     <dimen name="margin_setting_top">10dp</dimen>
     <dimen name="view_height_setting">3dp</dimen>
     <dimen name="view_settings_height_sub">1dp</dimen>
+    <dimen name="view_settings_height_sub_dark">3dp</dimen>
     <dimen name="set_h">48dp</dimen>
-    <dimen name="text_settings_sub">16sp</dimen>
+    <dimen name="text_settings_sub">20sp</dimen>
     <dimen name="text_settings_margin_top">15dp</dimen>
-    <dimen name="setting_caption_height">60dp</dimen>
+    <dimen name="setting_caption_height">62dp</dimen>
 
     <!-- dimens for custom notification.xml -->
     <dimen name="removeView_margin_right">5dp</dimen>
@@ -307,7 +309,8 @@
 
     <!-- dimens for Snagfilm logo in logo_actionbar.xml -->
     <dimen name="logo_left">18dp</dimen>
-    <dimen name="logo_top">10dp</dimen>
+    <dimen name="logo_top">2dp</dimen>
+    <dimen name="logo_bottom">2dp</dimen>
 
     <!-- dimens for media_top_controller.xml -->
     <dimen name="media_top_height">48dp</dimen>
@@ -436,6 +439,7 @@
     <dimen name="margin_btn_text">20dp</dimen>
     <dimen name="all_button_top_margin">5dp</dimen>
     <dimen name="all_media_title_top_margin">10dp</dimen>
+    <dimen name="age_gate_dob_size">40sp</dimen>
     <dimen name="all_login_marginLeft">4dp</dimen>
 
     <!-- Welcome Screen -->
@@ -489,8 +493,8 @@
     <dimen name="text_padding">24dp</dimen>
     <dimen name="action_bar_offset">66dp</dimen>
     <dimen name="showcase_radius">30dp</dimen>
-    <dimen name="showcase_radius_inner">48dp</dimen>
-    <dimen name="showcase_radius_outer">60dp</dimen>
+    <dimen name="showcase_radius_inner">35dp</dimen>
+    <dimen name="showcase_radius_outer">47dp</dimen>
     <dimen name="left_margin_detail">22dp</dimen>
     <dimen name="badge_height">60dp</dimen>
     <dimen name="drawer_icon_width">30dp</dimen>
@@ -512,5 +516,7 @@
     <dimen name="home_grid_image_padding">5dp</dimen>
     <dimen name="home_grid_separator_width">2dp</dimen>
     <dimen name="home_grid_separator_height">30dp</dimen>
-
+    
+    <!-- Age gateway  -->
+ <dimen name="age_gateway_header">30dp</dimen>
 </resources>

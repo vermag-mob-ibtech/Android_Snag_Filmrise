@@ -25,7 +25,7 @@
         android:fontFamily="sans-serif-light"
         android:minHeight="?android:attr/listPreferredItemHeightSmall"
         android:singleLine="true"
-        android:textColor="@color/trailer_text_color"
+        android:textColor="@color/trailer_film_text_color"
         android:textSize="@dimen/trailer_film_text" />
 
 </LinearLayout>

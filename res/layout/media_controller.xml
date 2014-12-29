@@ -194,7 +194,7 @@
                 android:layout_marginLeft="@dimen/settings_left_media"
                 android:layout_marginRight="@dimen/settings_right_media"
                 android:contentDescription="@string/description"
-                android:src="@drawable/settings_icon" />
+                android:src="@drawable/settings_icon_normal" />
         </RelativeLayout>
     </LinearLayout>
 

@@ -17,7 +17,7 @@
     <dimen name="edittextsize_email">450dp</dimen>
     <dimen name="edittextsize_password">270dp</dimen>
     <dimen name="marginleft">50dp</dimen>
-    <dimen name="marginright">30dp</dimen>
+    <dimen name="marginright">10dp</dimen>
     <dimen name="text_image_gap">5dp</dimen>
     <dimen name="marginskip_text">5dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>

@@ -48,7 +48,7 @@
                 android:layout_gravity="center|center_vertical"
                 android:layout_marginLeft="@dimen/browse_title_margin_left"
                 android:fontFamily="sans-serif-light"
-                android:textColor="@color/body_text_primary"
+                android:textColor="@color/list_home_fragment_text_color"
                 android:textSize="@dimen/browse_title_size_phone" />
 
             <View
@@ -57,7 +57,7 @@
                 android:layout_height="@dimen/horizontalline_height"
                 android:layout_below="@id/homelist_text"
                 android:layout_marginTop="@dimen/small_margin_detail"
-                android:background="@color/grey" />
+                android:background="@color/list_home_fragment_line_color" />
         </RelativeLayout>
 
         <LinearLayout
@@ -96,6 +96,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:textColor="@color/list_home_fragment_error_text_color"
                 android:text="@string/no_history"
                 android:visibility="gone" />
         </RelativeLayout>

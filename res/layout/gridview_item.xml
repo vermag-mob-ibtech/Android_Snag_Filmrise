@@ -2,23 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-   android:background="@drawable/horizontal_listview_item_selector" >
+    android:background="@drawable/horizontal_listview_item_selector"
+    android:orientation="vertical" >
 
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dynamic_lead_poster_top_margin"
+        android:layout_marginBottom="@dimen/dynamic_lead_poster_bottom_margin"
         android:layout_marginLeft="@dimen/half_snag_select_margin_left"
         android:layout_marginRight="@dimen/half_snag_select_margin_right"
-        android:layout_marginBottom="@dimen/dynamic_lead_poster_bottom_margin" >
+        android:layout_marginTop="@dimen/dynamic_lead_poster_top_margin" >
 
         <ImageView
             android:id="@+id/movie_thumbnail"
             android:layout_width="@dimen/snag_select_image_width"
             android:layout_height="@dimen/snag_select_image_height"
-            android:scaleType="fitXY"
-            android:background="@drawable/image_shadow_selector"/>
+            android:background="@drawable/image_shadow_selector"
+            android:scaleType="fitXY" />
 
         <ImageView
             android:id="@+id/badgesnagList"
@@ -35,18 +35,18 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/half_snag_select_margin_left"
         android:ellipsize="end"
+        android:fontFamily="sans-serif-light"
         android:singleLine="true"
-        android:textColor="@color/body_text_primary"
-        android:textSize="@dimen/grid_view_tv_size"
-        android:fontFamily="sans-serif-light" />
-     <ProgressBar
+        android:textColor="@color/snag_title_text_color"
+        android:textSize="@dimen/grid_view_tv_size" />
+
+    <ProgressBar
         android:id="@+id/progressBarSnag"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="@dimen/snag_select_image_progress_bar_width"
-        android:layout_marginLeft="@dimen/half_snag_select_margin_left"
         android:layout_height="@dimen/progress_bar_height"
+        android:layout_marginLeft="@dimen/half_snag_select_margin_left"
         android:progressDrawable="@drawable/progress_style"
-  		android:visibility="invisible"
-         />
+        android:visibility="invisible" />
 
 </LinearLayout>

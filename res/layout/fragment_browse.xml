@@ -37,7 +37,7 @@
             android:layout_marginTop="@dimen/margin_detail"
             android:fontFamily="sans-serif-thin"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@color/body_text_primary"
+            android:textColor="@color/browse_fragment_title_phone_text_color"
             android:textSize="@dimen/browse_title_size" />
 
         <View
@@ -46,13 +46,14 @@
             android:layout_height="@dimen/horizontalline_height"
             android:layout_below="@id/browseTitle"
             android:layout_marginTop="@dimen/small_margin_detail"
-            android:background="@color/grey"
+            android:background="@color/browse_fragment_line_color"
             android:visibility="gone" />
 
         <RelativeLayout
             android:id="@+id/content_container"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
             android:layout_below="@id/view_horizontal" >
 
             <!-- android:layout_marginTop="@dimen/small_margin_detail" -->
@@ -87,7 +88,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:textColor="@color/white"
+            android:textColor="@color/fragment_browse_error_text"
             android:visibility="gone" />
     </RelativeLayout>
 

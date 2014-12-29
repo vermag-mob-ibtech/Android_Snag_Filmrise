@@ -13,7 +13,7 @@
         android:fontFamily="sans-serif"
         android:gravity="center_vertical"
         android:text="@string/standard_options"
-        android:textColor="@color/body_text_primary"
+        android:textColor="@color/caption_screen_standard_options_text_color"
         android:textSize="@dimen/text_settings_header"
         android:textStyle="bold" />
 
@@ -21,7 +21,7 @@
         android:id="@+id/v_horizontal_standard"
         android:layout_width="fill_parent"
         android:layout_height="@dimen/view_height_setting"
-        android:background="@color/black" />
+        android:background="@color/caption_screen_standard_options__separator_line_color" />
 
     <LinearLayout
         android:id="@+id/ll_text_size"
@@ -38,7 +38,7 @@
             android:fontFamily="sans-serif-light"
             android:gravity="center_vertical"
             android:text="@string/text_size"
-            android:textColor="@color/body_text_primary"
+            android:textColor="@color/caption_screen_standard_options_size_text_color"
             android:textSize="@dimen/text_settings_sub" />
 
         <TextView
@@ -48,7 +48,7 @@
             android:fontFamily="sans-serif-light"
             android:gravity="center_vertical"
             android:text="@string/selected_text_Size"
-            android:textColor="@color/body_text_primary"
+            android:textColor="@color/caption_screen_standard_options_selected_size_text_color"
             android:textSize="@dimen/text_settings_header" />
     </LinearLayout>
 
@@ -57,7 +57,7 @@
         android:layout_width="fill_parent"
         android:layout_height="@dimen/view_settings_height_sub"
         android:layout_marginTop="@dimen/text_settings_margin_top"
-        android:background="@color/black" />
+        android:background="@color/caption_screen_standard_options_view_horizontal_line_color" />
 
     <LinearLayout
         android:id="@+id/ll_caption_style"
@@ -74,7 +74,7 @@
             android:fontFamily="sans-serif-light"
             android:gravity="center_vertical"
             android:text="@string/caption_style"
-            android:textColor="@color/body_text_primary"
+            android:textColor="@color/caption_screen_standard_options_caption_style_text_color"
             android:textSize="@dimen/text_settings_sub" />
 
         <TextView
@@ -84,7 +84,7 @@
             android:fontFamily="sans-serif-light"
             android:gravity="center_vertical"
             android:text="@string/selected_caption_style"
-            android:textColor="@color/body_text_primary"
+            android:textColor="@color/caption_screen_standard_options_selected_caption_style_text_color"
             android:textSize="@dimen/text_settings_header" />
     </LinearLayout>
 

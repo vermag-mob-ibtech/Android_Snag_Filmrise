@@ -3,14 +3,14 @@
     android:id="@+id/welcome_image"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@color/white" >
+    android:background="@color/tab_land_welcome_screen_layout_sw_bg_color" >
 
     <RelativeLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="fill_parent"
         android:layout_height="@dimen/actionbar_height"
         android:layout_alignParentTop="true"
-        android:background="@color/bar_navigation" >
+        android:background="@color/tab_land_welcome_screen_layout_sw_action_bar_color" >
 
         <ImageView
             android:id="@+id/iv_snagfilmlogo"
@@ -35,7 +35,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/browse"
-            android:textColor="@color/settings_selected_text"
+            android:textColor="@color/tab_land_welcome_screen_layout_sw_btn_browse_text_color"
             android:textSize="@dimen/skip_textsize" />
 
         <Button
@@ -70,11 +70,12 @@
 
             <ImageView
                 android:id="@+id/img_promo"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
                 android:layout_alignParentTop="true"
-                android:scaleType="fitXY" />
-
+                />
+            
             <TextView
                 android:id="@+id/tv_promoheadline"
                 android:layout_width="wrap_content"
@@ -82,7 +83,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
                 android:fontFamily="sans-serif-light"
-                android:textColor="@color/black"
+                android:textColor="@color/tab_land_welcome_screen_layout_sw_promo_headline_text_color"
                 android:textSize="@dimen/welcome_header_text_size"
                 android:textStyle="bold" />
 
@@ -98,7 +99,7 @@
                 android:fontFamily="sans-serif-light"
                 android:maxLines="3"
                 android:scrollbars="vertical"
-                android:textColor="@color/black"
+                android:textColor="@color/tab_land_welcome_screen_layout_sw_promo_desc_text_color"
                 android:textSize="@dimen/welcome_header_text_size" />
 
             <Button
@@ -113,7 +114,7 @@
                 android:background="@drawable/button_selector_welcome_signin"
                 android:fontFamily="sans-serif-light"
                 android:text="@string/start_your_trail"
-                android:textColor="@color/welcome_button_text_color"
+                android:textColor="@color/tab_land_welcome_screen_layout_sw_btn_login_text_color"
                 android:textSize="@dimen/welcome_button_text_size" />
 
             <Button
@@ -128,7 +129,7 @@
                 android:background="@drawable/button_selector_welcome_facebook"
                 android:fontFamily="sans-serif-light"
                 android:text="@string/register"
-                android:textColor="@color/welcome_button_text_color"
+                android:textColor="@color/tab_land_welcome_screen_layout_sw_btn_register_text_color"
                 android:textSize="@dimen/welcome_button_text_size" />
         </RelativeLayout>
     </ScrollView>
@@ -142,6 +143,7 @@
 
     <ImageView
         android:id="@+id/img_promo_bottom"
+        android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

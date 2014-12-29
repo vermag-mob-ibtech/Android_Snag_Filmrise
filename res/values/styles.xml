@@ -1,9 +1,5 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    -->
     <style name="AppBaseTheme" parent="android:Theme.Light"></style>
 
     <!-- Application theme. -->
@@ -18,12 +14,18 @@
 
     <style name="SnagStylePhone" parent="@style/Theme.AppCompat.Light">
         <item name="android:actionBarSize">@dimen/action_bar_size</item>
+        <item name="android:homeAsUpIndicator">@drawable/back_arrow</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
+        <item name="android:actionButtonStyle">@style/MyActionButtonStyle</item>
         <item name="android:actionBarItemBackground">@drawable/actionbar_selectable_background</item>
         <item name="android:itemBackground">@drawable/actionbar_selectable_background</item>
     </style>
-    
+
     <style name="SnagStyleTablet" parent="@style/Theme.AppCompat.Light">
         <item name="android:actionBarSize">@dimen/action_bar_size</item>
+        <item name="android:homeAsUpIndicator">@drawable/back_arrow</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
+        <item name="android:actionButtonStyle">@style/MyActionButtonStyle</item>
         <item name="android:actionBarItemBackground">@drawable/actionbar_selectable_background_tablet</item>
         <item name="android:itemBackground">@drawable/actionbar_selectable_background_tablet</item>
     </style>
@@ -51,7 +53,7 @@
     </style>
 
     <style name="AlertDialogCustom" parent="@android:style/Theme.DeviceDefault.Dialog"></style>
-	<!--Chromecast  Dialog -->
+    <!-- Chromecast  Dialog -->
     <style name="CastDialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowTitleStyle">@style/CastDialogWindowTitle</item>
     </style>
@@ -60,7 +62,7 @@
         <item name="android:textSize">22sp</item>
         <item name="android:textColor">@color/white</item>
     </style>
-    <!--ShowCase -->
+    <!-- ShowCase -->
     <style name="ShowcaseButton">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -102,5 +104,48 @@
     <style name="TextAppearance.ShowcaseView.Title.Light">
         <item name="android:shadowRadius">0</item>
     </style>
+
+    <style name="MyActionButtonStyle" parent="android:style/Widget.Holo.Light.ActionButton">
+        <item name="android:minWidth">60dip</item>
+        <item name="android:maxWidth">60dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+    </style>
+
+    <style name="MyActionButtonOverflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/menu</item>
+        <item name="android:background">?android:attr/actionBarItemBackground</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:contentDescription">"Lala"</item>
+    </style>
     
+    <style name="CustomProgressBar" parent="android:Theme.Holo.Dialog">
+    
+    <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:textColorPrimary">#FFFFFF</item>
+     <item name="android:backgroundDimEnabled">false</item>
+    <item name="android:textColor">#FFFFFF</item>
+    <item name="android:textStyle">normal</item>
+    
+    <item name="android:textSize">12sp</item>
+	</style>
+
+
+
+	<style name="CustomAlertDialogStyle">
+	
+	<item name="android:bottomBright">@android:color/transparent</item>
+	<item name="android:bottomDark">@android:color/transparent</item>
+	<item name="android:bottomMedium">@android:color/transparent</item>
+	<item name="android:centerBright">@android:color/transparent</item>
+	<item name="android:centerDark">@android:color/transparent</item>
+	<item name="android:centerMedium">@android:color/transparent</item>
+	<item name="android:fullBright">@android:color/transparent</item>
+	<item name="android:fullDark">@android:color/transparent</item>
+	<item name="android:topBright">@android:color/transparent</item>
+	<item name="android:topDark">@android:color/transparent</item>
+    
+    </style>
+
 </resources>
