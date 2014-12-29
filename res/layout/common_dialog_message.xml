@@ -6,36 +6,33 @@
     <RelativeLayout
         android:id="@+id/layout_header"
         android:layout_width="fill_parent"
-        android:background="@color/settings_selected_text"
-        android:layout_height="@dimen/header_height" >
+        android:layout_height="@dimen/header_height"
+        android:background="@color/error_dialog_header_color" >
 
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
-            android:textStyle="bold"
-            android:textColor="@color/white"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-  />
+            android:textColor="@color/error_dialog_title_text_color"
+            android:textStyle="bold" />
     </RelativeLayout>
-
 
     <RelativeLayout
         android:id="@+id/layout_body"
         android:layout_width="fill_parent"
         android:layout_height="@dimen/layout_body_height"
-        android:background="@color/white"
-        android:layout_below="@+id/layout_header" >
+        android:layout_below="@+id/layout_header"
+        android:background="@color/error_dialog_message_bg_color" >
 
         <TextView
             android:id="@+id/message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/message_margin_left"
-            android:textColor="@color/light_low_grey"
-            android:layout_marginRight="@dimen/message_margin_right"
             android:layout_centerInParent="true"
-            />
+            android:layout_marginLeft="@dimen/message_margin_left"
+            android:layout_marginRight="@dimen/message_margin_right"
+            android:textColor="@color/error_dialog_message_text_color" />
     </RelativeLayout>
 
     <TextView
@@ -43,7 +40,7 @@
         android:layout_width="fill_parent"
         android:layout_height="1dp"
         android:layout_below="@+id/layout_body"
-        android:background="@color/black" />
+        android:background="@color/error_dialog_line_color" />
 
     <RelativeLayout
         android:id="@+id/layout_bottom"
@@ -53,10 +50,10 @@
 
         <Button
             android:id="@+id/button"
-            android:textColor="@color/grey"
             android:layout_width="fill_parent"
-        	android:background="@color/progress_bar_tracker"
-            android:layout_height="@dimen/dialog_button_height" />
+            android:layout_height="@dimen/dialog_button_height"
+            android:background="@color/progress_bar_tracker"
+            android:textColor="@color/error_dialog_btn_text_color" />
     </RelativeLayout>
 
 </RelativeLayout>

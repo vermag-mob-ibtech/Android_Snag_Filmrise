@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.snagfilms.filmrise"
-    android:versionCode="3032000"
-    android:versionName="3.3" >
+    package="com.viewlift.coolflix"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
 
     <uses-sdk
         android:minSdkVersion="14"
-        android:targetSdkVersion="20" />
+        android:targetSdkVersion="19" />
 
     <uses-feature
         android:name="android.hardware.wifi"
@@ -31,16 +31,16 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
     <permission
-        android:name="com.snagfilms.filmrise.permission.C2D_MESSAGE"
+        android:name="com.viewlift.coolflix.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.snagfilms.filmrise.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.viewlift.coolflix.permission.C2D_MESSAGE" />
 
     <permission
-        android:name="com.snagfilms.filmrise.permission.UA_DATA"
+        android:name="com.viewlift.coolflix.permission.UA_DATA"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.snagfilms.filmrise.permission.UA_DATA" />
+    <uses-permission android:name="com.viewlift.coolflix.permission.UA_DATA" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <!-- End of permission list for push Notification -->
     <!-- Badge permissions -->
@@ -74,8 +74,10 @@
 
         <activity
             android:name="air.com.snagfilms.activities.HomeActivity"
+            android:theme="@style/AppTheme"
             android:configChanges="orientation|keyboardHidden|screenSize|fontScale"
-            android:launchMode="singleTop" >
+            android:launchMode="singleTop"
+             android:windowSoftInputMode="adjustResize"  >
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
@@ -130,7 +132,8 @@
         <activity
             android:name="air.com.snagfilms.app.videoplayer.VideoPlayerActivity"
             android:configChanges="orientation|keyboardHidden|screenSize|fontScale" />
-        <activity android:name="air.com.snagfilms.views.fragments.SignupWebViewFragment" />
+        <activity android:name="air.com.snagfilms.views.fragments.SignupWebViewFragment"
+             />
         <activity
             android:name="com.facebook.LoginActivity"
             android:label="@string/app_name" >
@@ -172,7 +175,7 @@
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
 
-                <category android:name="com.snagfilms.filmrise" />
+                <category android:name="com.viewlift.coolflix" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_REPLACED" />
@@ -193,10 +196,10 @@
 
         <provider
             android:name="com.urbanairship.UrbanAirshipProvider"
-            android:authorities="com.snagfilms.filmrise.urbanairship.provider"
+            android:authorities="com.viewlift.coolflix.urbanairship.provider"
             android:exported="true"
             android:multiprocess="true"
-            android:permission="com.snagfilms.filmrise.permission.UA_DATA" />
+            android:permission="com.viewlift.coolflix.permission.UA_DATA" />
 
         <receiver android:name="air.com.snagfilms.cast.chromecast.notifications.VideoIntentReceiver" >
             <intent-filter>
@@ -220,13 +223,13 @@
 
         <provider
             android:name="air.com.snagfilms.app.provider.MovieSuggestionProvider"
-            android:authorities="com.snagfilms.filmrise.app.provider.MovieSuggestionProvider"
+            android:authorities="com.viewlift.coolflix.app.provider.MovieSuggestionProvider"
             android:syncable="false" />
 
         <!-- Apptentive -->
         <meta-data
             android:name="apptentive_api_key"
-            android:value="5efc04cb5180a9bb41b95a24a8264a21bd26f45e056929f29efda9bdfe717b1c" />
+            android:value="877efde9cecd050581c95386218454edea626b6d2d5b8081804429fcb7b12522" />
 
         <activity
             android:name="com.apptentive.android.sdk.ViewActivity"
@@ -240,18 +243,16 @@
 
         <activity
             android:name="air.com.snagfilms.activities.SplashScreenActivity"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
-"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="com.crashlytics.ApiKey"
-            android:value="0d0c8d8a4a2cbdedfd8f6e7c1a0feac8bfb92a39" />
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="bfa5565cb1f902defadcbf02590dee355f2a7ae0"/>
     </application>
 
 </manifest>

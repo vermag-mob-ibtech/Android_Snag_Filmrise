@@ -53,7 +53,7 @@
                 android:layout_marginLeft="@dimen/half_snag_select_margin_left"
                 android:fontFamily="sans-serif-light"
                 android:scaleType="fitEnd"
-                android:textColor="@color/body_text_primary"
+                android:textColor="@color/fragment_home_grid_featured_title_color"
                 android:textSize="@dimen/dynamiclead_title_text_size" />
 
             <ImageView
@@ -74,7 +74,7 @@
                 android:layout_height="@dimen/home_grid_separator_height"
                 android:layout_centerVertical="true"
                 android:layout_toLeftOf="@+id/homegrid_grid_image"
-                android:background="@color/grey" />
+                android:background="@color/fragment_home_grid_line_color" />
 
             <ImageView
                 android:id="@+id/homegrid_row_image"
@@ -128,6 +128,7 @@
             <TextView
                 android:id="@+id/noDataMsg"
                 android:layout_width="wrap_content"
+                android:textColor="@color/fragment_home_grid_error_text_color"
                 android:layout_height="wrap_content"
                 android:text="@string/no_history"
                 android:visibility="gone" />

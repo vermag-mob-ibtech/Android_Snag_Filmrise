@@ -22,7 +22,7 @@
         android:layout_width="fill_parent"
         android:layout_height="@dimen/horizontalline_height"
         android:layout_below="@id/subCategoryThumbnail"
-        android:background="@color/grey" />
+        android:background="@color/browse_fragment_line_color" />
 
     <TextView
         android:id="@+id/subTitlePhone"
@@ -31,7 +31,7 @@
         android:layout_marginLeft="@dimen/browse_section_film_title_margin_left"
         android:layout_toRightOf="@+id/subCategoryThumbnail"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/body_text_primary"
+        android:textColor="@color/browse_fragment_title_phone_text_color"
         android:textSize="@dimen/browse_film_title_size"
         android:fontFamily="sans-serif-light"
         android:layout_centerVertical="true" />

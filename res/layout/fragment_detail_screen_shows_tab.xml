@@ -18,7 +18,7 @@
         android:scrollHorizontally="true"
         android:singleLine="true"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/body_text_primary"
+        android:textColor="@color/phone_show_detail_screen_movie_title_text_color"
         android:textSize="@dimen/textsize_hdr_detail" />
     
 
@@ -103,7 +103,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif"
                             android:text="@string/snagfilms"
-                            android:textColor="@color/dark_header_detail"
+                            android:textColor="@color/phone_show_detail_screen_movie_title_text_color"
                             android:textSize="@dimen/textsize_sub_hdr_detail"
                             android:visibility="visible" />
 
@@ -180,7 +180,7 @@
                             android:layout_marginRight="@dimen/seasons_right_margin"
                             android:fontFamily="sans-serif-light"
                             android:text="X"
-                            android:textColor="@color/sub_header_detail"
+                            android:textColor="@color/phone_show_detail_screen_season_count_text_color"
                             android:textSize="@dimen/textsize_sub_hdr_detail"
                             android:visibility="visible" />
 
@@ -190,7 +190,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
                             android:text="Seasons"
-                            android:textColor="@color/body_detail"
+                            android:textColor="@color/phone_show_detail_screen_season_text_color"
                             android:textSize="@dimen/textsize_body_detail"
                             android:visibility="visible" />
 
@@ -202,7 +202,7 @@
                             android:layout_marginRight="@dimen/seasons_right_margin"
                             android:fontFamily="sans-serif-light"
                             android:text="Y"
-                            android:textColor="@color/body_detail"
+                            android:textColor="@color/phone_show_detail_screen_episode_count_text_color"
                             android:textSize="@dimen/textsize_body_detail"
                             android:visibility="visible" />
 
@@ -212,7 +212,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
                             android:text="Episode"
-                            android:textColor="@color/body_detail"
+                            android:textColor="@color/phone_show_detail_screen_episode_text_color"
                             android:textSize="@dimen/textsize_body_detail"
                             android:visibility="visible" />
                     </LinearLayout>
@@ -227,7 +227,7 @@
                         android:maxLines="4"
                         android:singleLine="false"
                         android:text="@string/detail_description"
-                        android:textColor="@color/body_detail"
+                        android:textColor="@color/phone_show_detail_screen_shows_desc_text_color"
                         android:textSize="@dimen/textsize_body_detail"
                         android:visibility="visible" />
 
@@ -240,7 +240,7 @@
                         android:background="@drawable/more_text_detail"
                         android:fontFamily="sans-serif-light"
                         android:text="@string/more_detail"
-                        android:textColor="@color/btn_detail"
+                        android:textColor="@color/phone_show_detail_screen_shows_more_text_color"
                         android:textSize="@dimen/textsize_body_detail" />
                 </LinearLayout>
 
@@ -258,7 +258,7 @@
                         android:background="@drawable/button_selector"
                         android:fontFamily="sans-serif"
                         android:text="@string/watch_episode"
-                        android:textColor="@color/btn_text_detail"
+                        android:textColor="@color/phone_show_detail_screen_btn_watch_text_color"
                         android:textSize="@dimen/textsize_btn_detail" />
 
                     <Button
@@ -270,7 +270,7 @@
                         android:background="@drawable/button_selector"
                         android:fontFamily="sans-serif"
                         android:text="@string/watch_trailer"
-                        android:textColor="@color/btn_text_detail"
+                        android:textColor="@color/phone_show_detail_screen_btn_trailer_text_color"
                         android:textSize="@dimen/textsize_btn_detail" />
 
                     <Button
@@ -282,7 +282,7 @@
                         android:background="@drawable/button_selector"
                         android:fontFamily="sans-serif"
                         android:text="@string/add_queue_button_text"
-                        android:textColor="@color/btn_text_detail"
+                        android:textColor="@color/phone_show_detail_screen_btn_queue_text_color"
                         android:textSize="@dimen/textsize_btn_detail" />
                 </LinearLayout>
             </LinearLayout>
@@ -302,7 +302,7 @@
                 android:layout_marginTop="@dimen/margin_related_detail"
                 android:fontFamily="sans-serif-light"
                 android:text="@string/clips"
-                android:textColor="@color/related_text_color"
+                android:textColor="@color/phone_show_detail_screen_clips_text_color"
                 android:textSize="@dimen/related_textsize_detail"
                 android:visibility="visible" />
 
@@ -331,7 +331,7 @@
         android:layout_centerInParent="true"
         android:fontFamily="sans-serif"
         android:text="@string/no_info"
-        android:textColor="@color/dark_header_detail"
+        android:textColor="@color/phone_show_detail_screen_error_msg_text_color"
         android:textSize="@dimen/textsize_sub_hdr_detail"
         android:visibility="gone" />
 

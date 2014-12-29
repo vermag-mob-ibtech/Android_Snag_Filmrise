@@ -12,7 +12,7 @@
         android:fontFamily="sans-serif"
         android:gravity="left|center_vertical"
         android:text="@string/text_size"
-        android:textColor="@color/black"
+        android:textColor="@color/caption_text_size_dialog_size_text_color"
         android:textSize="@dimen/textsize_caption"
         android:textStyle="bold" />
 
@@ -20,7 +20,7 @@
         android:id="@+id/view_separator_one"
         android:layout_width="fill_parent"
         android:layout_height="@dimen/captions_view_height"
-        android:background="@color/black" />
+        android:background="@color/caption_text_size_dialog_separator_line_color" />
 
     <RadioGroup
         android:id="@+id/rg_all_text_Size"
@@ -41,7 +41,7 @@
             android:fontFamily="sans-serif"
             android:gravity="left|center_vertical"
             android:text="@string/extra_small"
-            android:textColor="@color/black"
+            android:textColor="@color/caption_text_size_dialog_extra_small_text_color"
             android:textSize="@dimen/textsize_list_caption"
             />
 
@@ -55,7 +55,7 @@
             android:drawableRight="@android:drawable/btn_radio"
             android:fontFamily="sans-serif"
             android:text="@string/small"
-            android:textColor="@color/black"
+            android:textColor="@color/caption_text_size_dialog_small_text_color"
             android:textSize="@dimen/textsize_list_caption" />
 
     
@@ -70,7 +70,7 @@
             android:fontFamily="sans-serif"
             android:gravity="left|center_vertical"
             android:text="@string/normal"
-            android:textColor="@color/black"
+            android:textColor="@color/caption_text_size_dialog_normal_text_color"
             android:textSize="@dimen/textsize_list_caption" 
             android:checked="true" />
 
@@ -85,7 +85,7 @@
             android:fontFamily="sans-serif"
             android:gravity="left|center_vertical"
             android:text="@string/Large"
-            android:textColor="@color/black"
+            android:textColor="@color/caption_text_size_dialog_large_text_color"
             android:textSize="@dimen/textsize_list_caption" />
 
        
@@ -99,7 +99,7 @@
             android:fontFamily="sans-serif"
             android:gravity="left|center_vertical"
             android:text="@string/extra_large"
-            android:textColor="@color/black"
+            android:textColor="@color/caption_text_size_dialog_extra_large_text_color"
             android:textSize="@dimen/textsize_list_caption" />
     </RadioGroup>
 

@@ -18,7 +18,7 @@
             android:layout_centerVertical="true"
             android:fontFamily="sans-serif-light"
             android:scaleType="fitEnd"
-            android:textColor="@color/body_text_primary"
+            android:textColor="@color/browse_fragment_title_phone_text_color"
             android:textSize="@dimen/dynamiclead_title_text_size" />
 
         <ImageView
@@ -40,7 +40,7 @@
             android:layout_height="@dimen/home_grid_separator_height"
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@+id/browse_grid_image"
-            android:background="@color/grey" />
+            android:background="@color/browse_fragment_line_color" />
 
         <ImageView
             android:id="@+id/browse_row_image"

@@ -4,46 +4,46 @@
     android:layout_height="wrap_content"
     android:background="@color/media_grey"
     android:orientation="vertical" >
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/media_top_height"
-        android:orientation="horizontal"
-         >
-        <LinearLayout 
-             android:id="@+id/selector" 
-             android:layout_width="wrap_content"
-       		 android:layout_height="@dimen/media_top_height"
-       		 android:clickable="true"
-       		 android:background="@drawable/actionbar_selectable_background"
-       		 android:layout_toLeftOf="@+id/seekbarContainer"
-       		 android:layout_alignParentLeft="true"
-            >
-            <ImageButton
-            android:id="@+id/close"
-            style="@style/custommediabutton"
-            android:layout_marginLeft="@dimen/close_margin"
-            android:contentDescription="@string/description"
-            android:src="@drawable/up_button_icon_back" 
-            android:focusable="false"
-            android:clickable="false"
-            android:layout_gravity="center"/>
-            
-            <TextView
-            android:id="@+id/textView1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/selector"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/tv_margin_title"
-            android:gravity="left|center"
-            android:textColor="@color/body_text_secondary"
-            android:fontFamily="sans-serif"
-            android:singleLine="true" 
-            android:ellipsize="marquee"
-        	android:marqueeRepeatLimit ="marquee_forever"
-        	android:focusable="false"
-        	android:clickable="false"
-        	android:scrollHorizontally="true" 
-            android:textSize="@dimen/textsize_media"/>
-            
+            android:layout_height="@dimen/media_top_height"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/seekbarContainer"
+            android:background="@drawable/actionbar_selectable_background"
+            android:clickable="true" >
+
+            <ImageButton
+                android:id="@+id/close"
+                style="@style/custommediabutton"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/close_margin"
+                android:clickable="false"
+                android:contentDescription="@string/description"
+                android:focusable="false"
+                android:src="@drawable/up_button_icon_back" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/tv_margin_title"
+                android:clickable="false"
+                android:ellipsize="marquee"
+                android:focusable="false"
+                android:fontFamily="sans-serif"
+                android:gravity="left|center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/body_text_secondary"
+                android:textSize="@dimen/textsize_media" />
         </LinearLayout>
 
         <LinearLayout
@@ -52,31 +52,31 @@
             android:layout_height="@dimen/media_top_height"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true" >
-			
-			<ImageButton
-			    android:id="@+id/media_route_button"
-			    style="@style/custommediabutton"
-			    android:layout_width="wrap_content"
-			    android:layout_height="match_parent"
-			    android:layout_marginLeft="@dimen/share_margin"
-			    android:layout_marginRight="@dimen/share_margin"
-			    android:contentDescription="@string/description"
-			    android:visibility="visible" />
 
-			<ImageButton
-            android:id="@+id/iv_share"
-            style="@style/custommediabutton"
-            android:layout_gravity="center"
-            android:layout_marginLeft="@dimen/share_margin"
-            android:layout_marginRight="@dimen/share_margin"
-            android:contentDescription="@string/description"
-            android:src="@drawable/share_icon_player" />
-			
+            <ImageButton
+                android:id="@+id/media_route_button"
+                style="@style/custommediabutton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/share_margin"
+                android:layout_marginRight="@dimen/share_margin"
+                android:contentDescription="@string/description"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/iv_share"
+                style="@style/custommediabutton"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/share_margin"
+                android:layout_marginRight="@dimen/share_margin"
+                android:contentDescription="@string/description"
+                android:src="@drawable/share_icon_player" />
+
             <ImageButton
                 android:id="@+id/imageView1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@color/bgcolor"
+                android:background ="@drawable/actionbar_selectable_background"
                 android:contentDescription="@string/description"
                 android:src="@drawable/volume_icon" />
 
@@ -85,18 +85,17 @@
                 style="@style/customseekbar"
                 android:layout_width="@dimen/seekbar_volume_width"
                 android:layout_height="wrap_content"
-                android:max="0"
                 android:layout_gravity="center"
+                android:max="0"
+                android:maxHeight="@dimen/media_seekabr_maxHeight"
                 android:minHeight="@dimen/media_seekabr_minHeigth"
-        		android:maxHeight="@dimen/media_seekabr_maxHeight" 
-        		android:progressDrawable="@drawable/seekbar_progress"
                 android:paddingBottom="@dimen/seekbar_padding_bottom"
                 android:paddingLeft="@dimen/padding_left"
                 android:paddingTop="@dimen/seekabr_padding_top"
-                android:thumb="@drawable/volume_thumb"
-                android:progress="0" />
-
+                android:progress="0"
+                android:progressDrawable="@drawable/seekbar_progress"
+                android:thumb="@drawable/volume_thumb" />
         </LinearLayout>
+    </RelativeLayout>
 
-        </RelativeLayout>
 </LinearLayout>

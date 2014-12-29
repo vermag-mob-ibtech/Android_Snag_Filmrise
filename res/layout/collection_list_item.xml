@@ -24,7 +24,7 @@
         android:ellipsize="end"
         android:fontFamily="sans-serif-light"
         android:singleLine="true"
-        android:textColor="@color/body_text_primary"
+        android:textColor="@color/snag_title_text_color"
         android:textSize="@dimen/dynamiclead_title_text_size" />
 
 </RelativeLayout>

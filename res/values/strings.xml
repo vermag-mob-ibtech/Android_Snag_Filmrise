@@ -9,12 +9,14 @@
     <string name="str_terms_and_use">Terms of Use</string>
     <string name="action_share">Share</string>
     <string name="action_search">Search</string>
-    <string name="str_sign_out">Log Out</string>
-    <string name="str_sign_in">Log In</string>
-    <string name="str_about">About Filmrise</string>
+    <string name="str_sign_out">Sign Out</string>
+    <string name="str_sign_in">Sign In</string>
+    <string name="str_about">About Coolflix</string>
     <string name="str_feedback">Feedback</string>
     <string name="device_search">Search Device</string>
     <string name="or">OR</string>
+    <string name="search_hint">Search Coolflix</string>
+    
 
     <!-- Action bar strings end -->
 
@@ -24,7 +26,7 @@
         <item>Log In</item>
     </array>
 
-    <string name="app_name">Filmrise</string>
+    <string name="app_name">Coolflix</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_title"><b>SNAG</b>FILMS</string>
     <string name="film_title">SNAGFILMS</string>
@@ -32,11 +34,10 @@
     <string name="hot_on_snag_label">Hot On Snag</string>
     <string name="Recommended_label">Recommended</string>
     <string name="recommendations">Recommendations</string>
-    
     <string name="dynamic_lead_label">Featured</string>
-    <string name="app_id">376209132538118</string>
+    <string name="app_id">765588496882075</string>
     <string name="chrome_cast_app_id">CC1AD845</string>
-
+    
     <!-- Detail Screen -->
     <string name="det_image">FilmImage</string>
     <string name="snagfilms">filmrise</string>
@@ -58,16 +59,18 @@
     <string name="cast">Cast</string>
     <string name="crew">Crew</string>
     <string name="cast_">Cast:</string>
+    <string name="age_gate_text">I certify that the information provided is true and accurate.</string>
+
     <!-- left Drawer Strings -->
     <string-array name="nav_drawer_titles">
         <item>Featured</item>
         <item>Shows</item>
-        <item>My Snag</item>
+        <item>Me</item>
         <item>Contact Us</item>
     </string-array>
     <string-array name="nav_drawer_titles_Cineroar">
         <item>Featured</item>
-        <item>My FilmRise</item>
+        <item>Me</item>
         <item>Contact Us</item>
     </string-array>
     <!-- Nav Drawer List Item Icons -->
@@ -116,6 +119,8 @@
     <string name="enter_fullname">FullName</string>
     <string name="enter_confirm_password">Confirm Password</string>
     <string name="enter_your_password">Enter Your Password</string>
+    <string name="enter_your_dob">Enter Your Birthday</string>
+    <string name="pin">Pin</string>
 
     <!-- dialog strings -->
     <string name="alllogin_text">Choose How You Want To Log In</string>
@@ -133,6 +138,8 @@
     <string name="repassword">Re enter Password</string>
     <string name="hide">Hide?</string>
     <string name="cancel">Cancel</string>
+    <string name="continue_caps">CONTINUE</string>
+    <string name="cancel_caps">CANCEL</string>
     <string name="registerforsnagfilms">Register for filmrise Account</string>
     <string name="errormessage">[Error msg goes here]</string>
     <string name="forgotpassword">Forgot Password?</string>
@@ -167,7 +174,7 @@
     <string name="please_login">Please log in </string>
 
     <!-- Settings -->
-    <string name="accept_push">Accept push notifications</string>
+    <string name="accept_push">Accept Push Notifications</string>
     <string name="closed_captioning">Closed Captioning</string>
     <string name="auto_play">Autoplay</string>
     <string name="play_next_movie">[Play next movie automatically]</string>
@@ -199,7 +206,6 @@
     <string name="already_in_queue">Already In Queue</string>
     <string name="no_history">No History</string>
     <string name="history">History</string>
-    
 
     <!-- text foe captions_dialog.xml -->
     <string name="captions_style">Caption Style</string>
@@ -274,5 +280,7 @@
     <string name="season_text">Season</string>
     <string name="episode_text">Episode</string>
     <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="dateOfBirth">--/--/----</string>
+    <string name="date_format">(MM/DD/YYYY)</string>
 
 </resources>

@@ -20,11 +20,11 @@
 
         <LinearLayout
             android:id="@+id/ads_container"
-            android:layout_centerHorizontal="true"
-            android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:visibility="gone" >
         </LinearLayout>
 
         <air.com.snagfilms.cast.chromecast.widget.MiniController
@@ -52,93 +52,6 @@
             android:layout_height="fill_parent"
             android:orientation="vertical" >
 
-            <RelativeLayout
-                android:id="@+id/queue_container"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="invisible" >
-
-                <RelativeLayout
-                    android:id="@+id/queue_layout"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content" >
-
-                    <TextView
-                        android:id="@+id/queue_sub_title"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_marginLeft="@dimen/left_margin_detail"
-                        android:layout_marginTop="@dimen/tray_margin_bottom"
-                        android:fontFamily="sans-serif-light"
-                        android:scaleType="fitEnd"
-                        android:text="Queue"
-                        android:textColor="@color/body_text_primary"
-                        android:textSize="@dimen/dynamiclead_title_text_size" />
-
-                    <ImageView
-                        android:id="@+id/queue_grid_image"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_gravity="center|center_vertical"
-                        android:layout_marginLeft="@dimen/margin_left"
-                        android:layout_marginRight="@dimen/margin_detail"
-                        android:background="@drawable/homegrid_row_image_selector"
-                        android:clickable="true"
-                        android:padding="@dimen/imgQue_padding"
-                        android:src="@drawable/grid_unselected" />
-
-                    <View
-                        android:id="@+id/separator_for_queue"
-                        android:layout_width="@dimen/view_width"
-                        android:layout_height="@dimen/frag_marginHeight"
-                        android:layout_centerVertical="true"
-                        android:layout_toLeftOf="@id/queue_grid_image"
-                        android:background="@color/grey" />
-
-                    <ImageView
-                        android:id="@+id/queue_row_image"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="@dimen/marginright"
-                        android:layout_toLeftOf="@id/separator_for_queue"
-                        android:padding="5dip"
-                        android:src="@drawable/row_selected" />
-                </RelativeLayout>
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:layout_below="@id/queue_layout" >
-
-                    <TextView
-                        android:id="@+id/queue_error_message"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="No Films in Queue"
-                        android:visibility="gone" />
-
-                    <air.com.snagfilms.app.component.HorizontalView
-                        android:id="@+id/queue_gallery"
-                        android:layout_width="fill_parent"
-                        android:layout_height="@dimen/gallery_height"
-                        android:layout_marginLeft="@dimen/horizontal_left_margin"
-                        android:layout_marginRight="@dimen/horizontal_view_right_margin"
-                        android:smoothScrollbar="true"
-                        android:visibility="visible" >
-                    </air.com.snagfilms.app.component.HorizontalView>
-
-                    <air.com.snagfilms.app.supertooltips.ToolTipRelativeLayout
-                        android:id="@+id/activity_main_tooltipframelayout"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent" />
-                </FrameLayout>
-            </RelativeLayout>
-
             <!-- History -->
 
             <RelativeLayout
@@ -162,7 +75,7 @@
                         android:fontFamily="sans-serif-light"
                         android:scaleType="fitEnd"
                         android:text="History"
-                        android:textColor="@color/body_text_primary"
+                        android:textColor="@color/mysnag_fragment_history_text_color"
                         android:textSize="@dimen/dynamiclead_title_text_size" />
 
                     <ImageView
@@ -185,7 +98,7 @@
                         android:layout_height="@dimen/frag_seperator_height"
                         android:layout_centerVertical="true"
                         android:layout_toLeftOf="@id/history_grid_image"
-                        android:background="@color/grey" />
+                        android:background="@color/mysnag_fragment_line_color" />
 
                     <ImageView
                         android:id="@+id/history_row_image"
@@ -208,6 +121,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:textColor="@color/mysnag_fragment_no_history_text_color"
                         android:text="No Films in History"
                         android:visibility="gone" />
 
@@ -223,6 +137,94 @@
 
                     <air.com.snagfilms.app.supertooltips.ToolTipRelativeLayout
                         android:id="@+id/activity_main_tooltipframelayout1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/queue_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" >
+
+                <RelativeLayout
+                    android:id="@+id/queue_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/queue_sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/left_margin_detail"
+                        android:layout_marginTop="@dimen/tray_margin_bottom"
+                        android:fontFamily="sans-serif-light"
+                        android:scaleType="fitEnd"
+                        android:text="Queue"
+                        android:textColor="@color/mysnag_fragment_queue_text_color"
+                        android:textSize="@dimen/dynamiclead_title_text_size" />
+
+                    <ImageView
+                        android:id="@+id/queue_grid_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:layout_marginRight="@dimen/margin_detail"
+                        android:background="@drawable/homegrid_row_image_selector"
+                        android:clickable="true"
+                        android:padding="@dimen/imgQue_padding"
+                        android:src="@drawable/grid_unselected" />
+
+                    <View
+                        android:id="@+id/separator_for_queue"
+                        android:layout_width="@dimen/view_width"
+                        android:layout_height="@dimen/frag_marginHeight"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/queue_grid_image"
+                        android:background="@color/mysnag_fragment_line_color" />
+
+                    <ImageView
+                        android:id="@+id/queue_row_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/marginright"
+                        android:layout_toLeftOf="@id/separator_for_queue"
+                        android:padding="5dip"
+                        android:src="@drawable/row_selected" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/queue_layout" >
+
+                    <TextView
+                        android:id="@+id/queue_error_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/mysnag_fragment_no_queue_text_color"
+                        android:text="No Films in Queue"
+                        android:visibility="gone" />
+
+                    <air.com.snagfilms.app.component.HorizontalView
+                        android:id="@+id/queue_gallery"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/gallery_height"
+                        android:layout_marginLeft="@dimen/horizontal_left_margin"
+                        android:layout_marginRight="@dimen/horizontal_view_right_margin"
+                        android:smoothScrollbar="true"
+                        android:visibility="visible" >
+                    </air.com.snagfilms.app.component.HorizontalView>
+
+                    <air.com.snagfilms.app.supertooltips.ToolTipRelativeLayout
+                        android:id="@+id/activity_main_tooltipframelayout"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />
                 </FrameLayout>
@@ -251,7 +253,7 @@
                         android:fontFamily="sans-serif-light"
                         android:scaleType="fitEnd"
                         android:text="Recommendations"
-                        android:textColor="@color/body_text_primary"
+                        android:textColor="@color/mysnag_fragment_recomm_text_color"
                         android:textSize="@dimen/dynamiclead_title_text_size" />
 
                     <ImageView
@@ -274,7 +276,7 @@
                         android:layout_height="@dimen/frag_seperator_height"
                         android:layout_centerVertical="true"
                         android:layout_toLeftOf="@id/recommended_grid_image"
-                        android:background="@color/grey" />
+                        android:background="@color/mysnag_fragment_line_color" />
 
                     <ImageView
                         android:id="@+id/recommended_row_image"
@@ -297,6 +299,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:textColor="@color/mysnag_fragment_no_recomm_text_color"
                         android:text="No Films in Recommendation"
                         android:visibility="gone" />
 
@@ -308,13 +311,10 @@
                         android:layout_marginRight="@dimen/horizontal_view_right_margin"
                         android:smoothScrollbar="true"
                         android:visibility="visible" >
-
                     </air.com.snagfilms.app.component.HorizontalView>
                 </FrameLayout>
             </RelativeLayout>
         </LinearLayout>
-
-
     </air.com.snagfilms.app.component.VerticalScrollView>
 
 </RelativeLayout>

@@ -18,7 +18,7 @@
                 android:id="@+id/layout"
                 android:layout_width="fill_parent"
                 android:layout_height="@dimen/set_h"
-                android:background="@color/bar_navigation" >
+                android:background="@color/light_low_grey" >
 
                 <TextView
                     android:id="@+id/tv_playback"
@@ -33,43 +33,52 @@
                     android:textColor="@color/body_text_primary"
                     android:textSize="@dimen/text_settings_header" />
             </RelativeLayout>
-
-            <View
-                android:id="@+id/v_horizontal"
+            <RelativeLayout 
+                android:id="@+id/relat_for_caption"
                 android:layout_width="fill_parent"
-                android:layout_height="@dimen/view_settings_height_sub"
-                android:background="@color/black" />
-
-            <TextView
-                android:id="@+id/tv_caption"
-                android:layout_width="fill_parent"
-                android:layout_height="@dimen/set_h"
-                android:layout_marginLeft="@dimen/margin_setting"
-                android:layout_marginRight="@dimen/margin_setting"
+                android:layout_height="@dimen/set_h"                
                 android:background="@drawable/categories_phone_selector"
-                android:clickable="true"
-                android:gravity="center_vertical"
-                android:text="@string/captions"
-                android:textColor="@color/body_text_primary"
-                android:textSize="@dimen/text_settings_sub"
-                android:textStyle="bold" />
+                android:clickable="true">
+                <RelativeLayout
+                    android:id="@+id/relat_caption"
+	                android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true" 
+                    android:layout_marginLeft="@dimen/margin_setting"
+                	android:layout_marginRight="@dimen/margin_setting" >
+                	<TextView
+		                android:id="@+id/tv_caption"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"    
+		                android:layout_alignParentLeft="true"        
+		                android:layout_centerVertical="true"  
+		                android:text="@string/captions"		                
+		                android:textColor="@color/body_text_primary"
+		                android:textSize="@dimen/text_settings_sub"
+		                android:textStyle="bold" />                   
+                    
+                </RelativeLayout>     
+                
+            </RelativeLayout>
+
+            
 
             <View
                 android:id="@+id/v_horizontal"
                 android:layout_width="fill_parent"
-                android:layout_height="@dimen/view_settings_height_sub"
-                android:background="@color/black" />
+                android:layout_height="@dimen/view_settings_height_sub_dark"
+                android:background="@color/separator_color" />
 
             <RelativeLayout
                 android:id="@+id/rl_for_caption"
                 android:layout_width="fill_parent"
-                android:layout_height="@dimen/setting_caption_height"
-                android:layout_marginLeft="@dimen/margin_setting"
-                android:layout_marginRight="@dimen/margin_setting"
+                android:layout_height="@dimen/setting_caption_height"                
                 android:background="@drawable/categories_phone_selector"
                 android:clickable="true" >
 
                 <LinearLayout
+                    android:layout_marginLeft="@dimen/margin_setting"
+                    android:layout_marginRight="@dimen/margin_setting"
                     android:id="@+id/linearLayout_play"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -102,30 +111,32 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="@dimen/marginright"
-                    android:button="@drawable/checkbox_border" />
+                    android:button="@drawable/checkbox_border"
+                    android:layout_marginRight="@dimen/marginright" />
+                 <!-- android:layout_marginRight="@dimen/marginright" -->
             </RelativeLayout>
 
             <View
                 android:id="@+id/v_horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="@dimen/view_settings_height_sub"
-                android:background="@color/black" />
+                android:background="@color/separator_color" />
 
             <RelativeLayout
                 android:id="@+id/rl_for_notification"
                 android:layout_width="fill_parent"
                 android:layout_height="@dimen/set_h"
-                android:layout_marginLeft="@dimen/margin_setting"
-                android:layout_marginRight="@dimen/margin_setting"
+                
                 android:background="@drawable/categories_phone_selector"
                 android:clickable="true" >
 
-                <RelativeLayout
+                <LinearLayout
                     android:id="@+id/rl_push_check"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true" >
+                    android:layout_centerVertical="true" 
+                    android:layout_marginLeft="@dimen/margin_setting"
+                    android:layout_marginRight="@dimen/margin_setting">
 
                     <TextView
                         android:id="@+id/tv_accept_push"
@@ -138,22 +149,24 @@
                         android:textSize="@dimen/text_settings_sub"
                         android:textStyle="bold" />
 
-                    <CheckBox
+                    
+                </LinearLayout>
+                 <!-- android:layout_marginRight="@dimen/marginright" -->
+                 <CheckBox
                         android:id="@+id/check_accept_push"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        android:layout_marginRight="@dimen/marginright"
                         android:layout_centerVertical="true"
-                        android:button="@drawable/checkbox_border" />
-                </RelativeLayout>
+                        android:button="@drawable/checkbox_border"
+                        android:layout_marginRight="@dimen/marginright" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/layout1"
                 android:layout_width="fill_parent"
                 android:layout_height="@dimen/set_h"
-                android:background="@color/bar_navigation" >
+                android:background="@color/light_low_grey" >
 
                 <TextView
                     android:id="@+id/tv_my_account"
@@ -172,8 +185,7 @@
                 android:id="@+id/rl_for_subricption_info"
                 android:layout_width="fill_parent"
                 android:layout_height="@dimen/set_h"
-                android:layout_marginLeft="@dimen/margin_setting"
-                android:layout_marginRight="@dimen/margin_setting"
+                
                 android:background="@drawable/categories_phone_selector"
                 android:clickable="true" >
 
@@ -181,7 +193,9 @@
                     android:id="@+id/rl_subricption"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true" >
+                    android:layout_centerVertical="true" 
+                    android:layout_marginLeft="@dimen/margin_setting"
+                	android:layout_marginRight="@dimen/margin_setting">
 
                     <TextView
                         android:id="@+id/tv_subricption_info"
@@ -199,15 +213,13 @@
             <View
                 android:id="@+id/v_horizontal_last"
                 android:layout_width="fill_parent"
-                android:layout_height="@dimen/view_settings_height_sub"
-                android:background="@color/black" />
+                android:layout_height="@dimen/view_settings_height_sub_dark"
+                android:background="@color/separator_color" />
 
             <RelativeLayout
                 android:id="@+id/rl_for_personal_info"
                 android:layout_width="fill_parent"
-                android:layout_height="@dimen/set_h"
-                android:layout_marginLeft="@dimen/margin_setting"
-                android:layout_marginRight="@dimen/margin_setting"
+                android:layout_height="@dimen/set_h"                
                 android:background="@drawable/categories_phone_selector"
                 android:clickable="true" >
 
@@ -215,7 +227,9 @@
                     android:id="@+id/rl_personal"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true" >
+                    android:layout_centerVertical="true" 
+                    android:layout_marginLeft="@dimen/margin_setting"
+                	android:layout_marginRight="@dimen/margin_setting">
 
                     <TextView
                         android:id="@+id/tv_personal_info"
@@ -234,14 +248,13 @@
                 android:id="@+id/v_horizontal_last"
                 android:layout_width="fill_parent"
                 android:layout_height="@dimen/view_settings_height_sub"
-                android:background="@color/black" />
+                android:background="@color/separator_color" />
 
             <RelativeLayout
                 android:id="@+id/rl_for_privacy_policy"
                 android:layout_width="fill_parent"
                 android:layout_height="@dimen/set_h"
-                android:layout_marginLeft="@dimen/margin_setting"
-                android:layout_marginRight="@dimen/margin_setting"
+               
                 android:background="@drawable/categories_phone_selector"
                 android:clickable="true" >
 
@@ -249,7 +262,9 @@
                     android:id="@+id/rl_privacy"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true" >
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_setting"
+                	android:layout_marginRight="@dimen/margin_setting" >
 
                     <TextView
                         android:id="@+id/tv_privacy_policy"
@@ -267,15 +282,14 @@
             <View
                 android:id="@+id/v_horizontal_last"
                 android:layout_width="fill_parent"
-                android:layout_height="@dimen/view_settings_height_sub"
-                android:background="@color/black" />
+                android:layout_height="@dimen/view_settings_height_sub_dark"
+                android:background="@color/separator_color" />
 
             <RelativeLayout
                 android:id="@+id/rl_for_terms_use"
                 android:layout_width="fill_parent"
                 android:layout_height="@dimen/set_h"
-                android:layout_marginLeft="@dimen/margin_setting"
-                android:layout_marginRight="@dimen/margin_setting"
+                
                 android:background="@drawable/categories_phone_selector"
                 android:clickable="true" >
 
@@ -283,7 +297,9 @@
                     android:id="@+id/rl_terms"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true" >
+                    android:layout_centerVertical="true" 
+                    android:layout_marginLeft="@dimen/margin_setting"
+                	android:layout_marginRight="@dimen/margin_setting">
 
                     <TextView
                         android:id="@+id/tv_terms_use"
@@ -302,7 +318,7 @@
                 android:id="@+id/v_horizontal_last"
                 android:layout_width="fill_parent"
                 android:layout_height="@dimen/view_settings_height_sub"
-                android:background="@color/black" />
+                android:background="@color/separator_color" />
         </LinearLayout>
     </ScrollView>
 

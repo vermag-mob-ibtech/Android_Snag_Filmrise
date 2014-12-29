@@ -2,14 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/black"
+    android:background="@color/phone_welcome_screen_header_layout_bg_color"
     android:orientation="vertical" >
 
     <RelativeLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="fill_parent"
         android:layout_height="@dimen/actionbar_height"
-        android:background="@color/bar_navigation" >
+        android:background="@color/phone_welcome_screen_header_layout_action_bar_color" >
 
         <TextView
             android:id="@+id/tv_promoheadline"
@@ -19,7 +19,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/login_headline_margin_top"
             android:fontFamily="sans-serif-light"
-            android:textColor="@color/black"
+            android:textColor="@color/phone_welcome_screen_header_layout_promo_headline_text_color"
             android:textSize="@dimen/welcome_header_text_size"
             android:textStyle="bold"
             android:visibility="gone" />
@@ -36,7 +36,7 @@
             android:fontFamily="sans-serif-light"
             android:maxLines="3"
             android:scrollbars="vertical"
-            android:textColor="@color/black"
+            android:textColor="@color/phone_welcome_screen_header_layout_promo_desc_text_color"
             android:textSize="@dimen/welcome_header_text_size"
             android:visibility="gone" />
 
@@ -64,7 +64,7 @@
             android:paddingLeft="@dimen/browsebuttonpadding"
             android:paddingRight="@dimen/browsebuttonpadding"
             android:text="@string/browse"
-            android:textColor="@color/settings_selected_text"
+            android:textColor="@color/phone_welcome_screen_header_layout_btn_browse_text_color"
             android:textSize="@dimen/skip_textsize" />
 
         <Button

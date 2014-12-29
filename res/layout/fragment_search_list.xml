@@ -2,7 +2,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/search_screen_mob"
     android:layout_width="fill_parent"
-    android:background="@color/black"
     android:layout_height="fill_parent" >
 
     <LinearLayout
@@ -39,7 +38,7 @@
             android:layout_gravity="center|center_vertical"
             android:layout_marginBottom="@dimen/list_home_tv_margin_bottom"
             android:scaleType="fitEnd"
-            android:textColor="@color/grey"
+            android:textColor="@color/search_fragment_searchlist_text_color"
             android:textSize="@dimen/list_home_tv_size" />
 
         <LinearLayout
@@ -51,7 +50,7 @@
             <ListView
                 android:id="@+id/searchList_listview"
                 android:layout_width="fill_parent"
-                android:divider="@color/grey"
+                android:divider="@color/search_fragment_line_color"
                 android:dividerHeight="1dp"
                 android:layout_height="wrap_content" />
         </LinearLayout>
