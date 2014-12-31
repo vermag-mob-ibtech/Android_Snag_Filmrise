@@ -35,7 +35,7 @@
     <string name="Recommended_label">Recommended</string>
     <string name="recommendations">Recommendations</string>
     <string name="dynamic_lead_label">Featured</string>
-    <string name="app_id">765588496882075</string>
+    <string name="app_id">828619083848385</string>
     <string name="chrome_cast_app_id">CC1AD845</string>
     
     <!-- Detail Screen -->
@@ -103,7 +103,7 @@
     <string name="signin_help">Need further help?</string>
     <string name="forgotpass">Forgot your password?</string>
     <string name="forgot_email_address_title">Forgot Email Address</string>
-    <string name="forgot_email_address_message">Please contact [customercare@filmrise.com] to retrieve your login info.</string>
+    <string name="forgot_email_address_message">Please contact [customercare@coolflix.com] to retrieve your login info.</string>
     <string name="signup_info">Login with Facebook,Twitter,or Google,or you can also login with your 
                               email address below. </string>
     <string name="add_pic">Add profile picture</string>
