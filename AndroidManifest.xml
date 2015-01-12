@@ -131,6 +131,7 @@
         </activity>
         <activity
             android:name="air.com.snagfilms.app.videoplayer.VideoPlayerActivity"
+            android:theme="@android:style/Theme.Holo.Light"
             android:configChanges="orientation|keyboardHidden|screenSize|fontScale" />
         <activity android:name="air.com.snagfilms.views.fragments.SignupWebViewFragment"
              />
@@ -243,7 +244,7 @@
 
         <activity
             android:name="air.com.snagfilms.activities.SplashScreenActivity"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:theme="@style/splashStyle"
             android:configChanges="orientation|keyboardHidden|screenSize" >
 
             <intent-filter>

@@ -16,7 +16,7 @@
     <string name="device_search">Search Device</string>
     <string name="or">OR</string>
     <string name="search_hint">Search Coolflix</string>
-    
+    <string name="authority">com.viewlift.coolflix.app.provider.MovieSuggestionProvider</string>
 
     <!-- Action bar strings end -->
 
@@ -37,7 +37,7 @@
     <string name="dynamic_lead_label">Featured</string>
     <string name="app_id">828619083848385</string>
     <string name="chrome_cast_app_id">CC1AD845</string>
-    
+
     <!-- Detail Screen -->
     <string name="det_image">FilmImage</string>
     <string name="snagfilms">filmrise</string>

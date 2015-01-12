@@ -61,7 +61,7 @@
     <dimen name="margin_related_text_list">2dp</dimen>
     <dimen name="margin_tv_description_detail">22dp</dimen>
     <dimen name="margin_btn_detail">@dimen/margin_trailer_detail</dimen>
-    <dimen name="buttonheight_detail">40dp</dimen>
+    <dimen name="buttonheight_detail">47dp</dimen>
     <dimen name="imagelistheight_trailerdetail">100dp</dimen>
     <dimen name="imagelistheight_detail">135dp</dimen>
     <dimen name="imagewidth_relatedfilms_detail">64dp</dimen>
