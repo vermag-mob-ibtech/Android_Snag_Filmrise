@@ -134,7 +134,8 @@
     <color name="media_grey">@color/very_dark_gray</color>
     <color name="light_grey">#cccccc</color>
     <color name="secondary_center_prog">#0000ffff</color>
-    <color name="secondary_end_prog">@color/red</color>
+    <color name="seek_bar_color_prog">#2c9ed9</color>
+    <color name="secondary_end_prog">#2c9ed9</color>
     <color name="secondary_start_prog">#0000ffff</color>
     <color name="thumb_color">#D0D0D0</color>
     <color name="settings_header_color">@color/header_color</color>
