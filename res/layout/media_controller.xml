@@ -59,7 +59,7 @@
                     android:layout_toRightOf="@id/tv_english"
                     android:clickable="true"
                     android:text="@string/off"
-                    android:textColor="@color/settings_selected_text"
+                    android:textColor="@color/seek_bar_color_prog"
                     android:textSize="@dimen/player_sub_items" 
                     android:fontFamily="sans-serif-light"/>
             </RelativeLayout>
@@ -115,7 +115,7 @@
                     android:layout_toRightOf="@id/tv_full"
                     android:clickable="true"
                     android:text="@string/wide"
-                    android:textColor="@color/settings_selected_text"
+                    android:textColor="@color/seek_bar_color_prog"
                     android:textSize="@dimen/player_sub_items" 
                     android:fontFamily="sans-serif-light"/>
             </RelativeLayout>
