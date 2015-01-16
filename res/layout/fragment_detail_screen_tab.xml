@@ -199,6 +199,7 @@
                                     android:layout_centerInParent="true"
                                     android:layout_centerVertical="true"
                                     android:fontFamily="sans-serif"
+                                    android:gravity="center"
                                     android:text="@string/watchfilm"
                                     android:textColor="@color/phone_movie_detail_screen_btn_watch_text_color"
                                     android:textSize="@dimen/textsize_btn_detail" />
