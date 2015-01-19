@@ -277,7 +277,7 @@
                             android:layout_centerVertical="true"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
-                            android:text="@string/watchfilm"
+                            android:text="@string/watch_episode"
                             android:textColor="@color/phone_movie_detail_screen_btn_watch_text_color"
                             android:textSize="@dimen/textsize_btn_detail" />
                     </RelativeLayout>

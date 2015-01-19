@@ -71,7 +71,19 @@
         <air.com.snagfilms.app.supertooltips.ToolTipRelativeLayout
             android:id="@+id/activity_main_tooltipframelayout"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent" />
+            android:layout_height="fill_parent" >
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="144dp"
+                android:visibility="gone" />
+
+        </air.com.snagfilms.app.supertooltips.ToolTipRelativeLayout>
     </FrameLayout>
 
 </RelativeLayout>

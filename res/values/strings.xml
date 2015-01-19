@@ -283,4 +283,16 @@
     <string name="dateOfBirth">--/--/----</string>
     <string name="date_format">(MM/DD/YYYY)</string>
 
+    <!-- Roku Dial -->
+    <string name="ROKU_TV_APP_ID">roku</string>
+    <string name="ROKU_TV_APP_NAME">Coolflix</string>
+    <string name="ROKU">roku</string>
+    <!-- FIRE TV CONSTANTS -->
+    <string name="FIRE_TV_APP_ID">Snagfilms</string>
+    <string name="FIRE_TV_APP_NAME">SnagFilms</string>
+    
+    <!-- Beacon Analyitcs Values-->
+     <string name="hostName">www.coolflix.com</string>
+     <string name="platform">Android</string>
+
 </resources>
