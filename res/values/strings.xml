@@ -37,7 +37,7 @@
     <string name="dynamic_lead_label">Featured</string>
     <string name="app_id">828619083848385</string>
     <string name="chrome_cast_app_id">CC1AD845</string>
-
+	<string name="close">close</string>
     <!-- Detail Screen -->
     <string name="det_image">FilmImage</string>
     <string name="snagfilms">filmrise</string>
@@ -132,24 +132,25 @@
     <string name="email">E-mail Address</string>
     <string name="submit">Submit</string>
     <string name="submit_msg">Password reset successfully</string>
-    <string name="register_account">Register For A filmrise Account</string>
+    <string name="register_account">Register For A Coolflix Account</string>
     <string name="name">Name</string>
-    <string name="password">Enter Current Password</string>
+    <string name="password">Enter Password</string>
     <string name="repassword">Re enter Password</string>
     <string name="hide">Hide?</string>
     <string name="cancel">Cancel</string>
     <string name="continue_caps">CONTINUE</string>
     <string name="cancel_caps">CANCEL</string>
-    <string name="registerforsnagfilms">Register for filmrise Account</string>
+    <string name="registerforsnagfilms">Register for Coolflix Account</string>
     <string name="errormessage">[Error msg goes here]</string>
     <string name="forgotpassword">Forgot Password?</string>
     <string name="snagfilm">SNAGFILMS</string>
     <string name="forgot_email_address">Forgot your email address?</string>
+    <string name="subscibe">Subscribe Now</string>
 
     <!-- login screen strings -->
     <string name="browse">Browse </string>
     <string name="discover">Discover Something Different</string>
-    <string name="register">Sign In</string>
+    <string name="register">Sign Up</string>
     <string name="account">Already have an account?</string>
     <string name="newregister">New to filmrise?Register an account today</string>
 

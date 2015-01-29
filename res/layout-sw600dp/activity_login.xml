@@ -143,7 +143,7 @@
         android:layout_marginTop="@dimen/margin"
         android:background="@drawable/button_selector_welcome_facebook"
         android:fontFamily="sans-serif-light"
-        android:text="@string/register"
+        android:text="@string/login"
         android:textColor="@color/tab_welcome_screen_header_layout_sw_btn_register_text_color"
         android:textSize="@dimen/welcome_button_text_size" />
 
