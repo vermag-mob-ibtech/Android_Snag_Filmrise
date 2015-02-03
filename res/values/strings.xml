@@ -123,9 +123,9 @@
     <string name="pin">Pin</string>
 
     <!-- dialog strings -->
-    <string name="alllogin_text">Choose How You Want To Log In</string>
+    <string name="alllogin_text">Login To Get Started</string>
     <string name="alllogin_textalt">Log in to get started.</string>
-    <string name="subtitle">Not already a member? Register   </string>
+    <string name="subtitle">Not already a member? SignUp   </string>
     <string name="subtitleHere"> here.</string>
     <string name="forgot_password">Reset Password</string>
     <string name="forgot_password_desc">Enter the email address you used to create your account and we will email you instructions on how to reset your password.</string>
@@ -283,7 +283,10 @@
     <string name="title_activity_splash_screen">SplashScreenActivity</string>
     <string name="dateOfBirth">--/--/----</string>
     <string name="date_format">(MM/DD/YYYY)</string>
-
+    
+    
+    <!-- Dialog for is Film Playable -->
+<string name="film_playable_title">Restricted Content</string>
     <!-- Roku Dial -->
     <string name="ROKU_TV_APP_ID">roku</string>
     <string name="ROKU_TV_APP_NAME">Coolflix</string>

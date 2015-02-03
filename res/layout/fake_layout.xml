@@ -4,6 +4,27 @@
     android:layout_height="@dimen/sections_about"
     android:orientation="vertical" >
     <View 
+        android:id="@+id/snagfilms_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+     <View 
+        android:id="@+id/facebook_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+      <View 
+        android:id="@+id/twitter_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+       <View 
+        android:id="@+id/googleplus_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+       
+       <View 
         android:id="@+id/tv_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
