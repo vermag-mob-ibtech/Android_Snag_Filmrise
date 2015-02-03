@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.viewlift.coolflix"
     android:versionCode="101"
-    android:versionName="1.0.1" >
+    android:versionName="1.0.2" >
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -122,7 +122,7 @@
         <activity
             android:name="air.com.snagfilms.activities.LoginActivity"
             android:configChanges="orientation|keyboardHidden|screenSize|fontScale"
-            android:windowSoftInputMode="adjustResize" >
+            android:windowSoftInputMode="adjustNothing" >
             <intent-filter>
                 <data
                     android:host="snagfilms"

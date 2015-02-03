@@ -449,7 +449,7 @@
     <dimen name="all_media_body_text_size">16sp</dimen>
     <dimen name="margin_btn_text">20dp</dimen>
     <dimen name="all_button_top_margin">5dp</dimen>
-    <dimen name="all_media_title_top_margin">10dp</dimen>
+    <dimen name="all_media_title_top_margin">40dp</dimen>
     <dimen name="age_gate_dob_size">40sp</dimen>
     <dimen name="all_login_marginLeft">4dp</dimen>
 
@@ -509,7 +509,7 @@
     <dimen name="left_margin_detail">22dp</dimen>
     <dimen name="badge_height">60dp</dimen>
     <dimen name="drawer_icon_width">30dp</dimen>
-    <dimen name="all_media_title_top_margin_phone">30dp</dimen>
+    <dimen name="all_media_title_top_margin_phone">20dp</dimen>
     <dimen name="horizontal_view_right_margin">12dp</dimen>
     <dimen name="horizontal_left_margin">11dp</dimen>
     <dimen name="browse_title_size">25sp</dimen>
