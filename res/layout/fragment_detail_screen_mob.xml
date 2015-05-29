@@ -159,7 +159,8 @@
                             android:background="@drawable/image_shadow_selector"
                             android:contentDescription="@string/det_image"
                             android:scaleType="fitXY"
-                            android:src="@drawable/loading_snag" >
+                            android:src="@drawable/loading_snag"
+                            android:visibility="gone">
                         </ImageView>
                     </LinearLayout>
 
@@ -291,7 +292,7 @@
                                             android:text="@string/releasedate"
                                             android:textColor="@color/phone_movie_detail_screen_release_text_color"
                                             android:textSize="@dimen/textsize_sub_hdr_detail"
-                                            android:visibility="visible" />
+                                            android:visibility="gone" />
 
                                         <TextView
                                             android:id="@+id/tv_rel_date"
@@ -386,6 +387,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:layout_centerVertical="true"
+                        android:gravity="center"
                         android:fontFamily="sans-serif"
                         android:text="@string/watchfilm"
                         android:textColor="@color/phone_movie_detail_screen_btn_watch_text_color"
@@ -410,7 +412,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="@dimen/imgQue_marginLeft"
-                        android:background="@drawable/queue_icon" />
+                        android:src="@drawable/queue_icon" />
 
                     <TextView
                         android:id="@+id/line"
@@ -449,7 +451,7 @@
                     android:text="@string/trailnclips"
                     android:textColor="@color/phone_movie_detail_screen_traliers_text_color"
                     android:textSize="@dimen/trailer_textsize_detail"
-                    android:visibility="visible" />
+                    android:visibility="gone" />
 
                 <air.com.snagfilms.app.component.HorizontalView
                     android:id="@+id/horizontallistview_trailers"

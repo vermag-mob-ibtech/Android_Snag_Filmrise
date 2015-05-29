@@ -3,27 +3,308 @@
     android:layout_width="fill_parent"
     android:layout_height="@dimen/sections_about"
     android:orientation="vertical" >
-    <View 
+    <View
+        android:id="@+id/snagfilms_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+     <View
+        android:id="@+id/facebook_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+      <View
+        android:id="@+id/twitter_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+       <View
+        android:id="@+id/googleplus_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+       <View
         android:id="@+id/tv_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />
-    
-     <View 
+
+     <View
         android:id="@+id/about"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
- 
+
         />
-     <View 
+     <View
          android:id="@+id/snag_login_error_msg"
          android:layout_width="match_parent"
          android:layout_height="match_parent"/>
-     <View 
+     <View
          android:id="@+id/login_error_msg"
          android:layout_width="match_parent"
          android:layout_height="match_parent"/>
      <View android:id="@+id/dialog_register"
          android:layout_width="fill_parent"
-		android:layout_height="fill_parent"/>         
+		android:layout_height="fill_parent"/>
+
+
+
+    <View android:id="@+id/submenu_selector"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/rl_for_fav"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/related_films_header"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/text_page_indicator"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/viewTop"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/text_history_page_indicator"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/text_queue_page_indicator"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/text_recomm_page_indicator"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+
+    <View android:id="@+id/error_message"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+
+    <View android:id="@+id/featured_gnett_gallery"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/featured_gnett_gallery"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/text"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+
+    <View android:id="@+id/etSignUpEmail"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/etSignUpPassword"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/btnSignUpWithFacebook"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/btnSignUpJoinIn"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/tvSignUpPasswordError"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+
+
+    <View android:id="@+id/tvSignIn"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/tvSignUp"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/tvSignUpEmailError"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/tvSignUpWithFacebookCaption"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/tvCreateAccount"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+
+
+    <View android:id="@+id/tvSignInInfoCaption"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/orLabel"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+
+    <View android:id="@+id/tvForgotPasswordSignUp"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/tvForgotPasswordSignUpCaption"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/tvRosterTitle"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+
+    <View android:id="@+id/tvRosterSectionHeader"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/slider_image"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/tvInfoCaption"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/tvInfoValue"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+
+    <View android:id="@+id/tray_title"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/scrollPlayerMain"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/playerStatsTab"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/playerVidTab"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/text_player_pos"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/imgPlayerIcon"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/playerName"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/rellayout_btn_fav"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/imgFavorite"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/llPlayerContainer"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/llPlayerContainer"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+
+
+    <View android:id="@+id/lvRosterMain"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/tvNoRosterMsg"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+
+    <View android:id="@+id/llPlayerInfoContainer"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/playerScreenProgress"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/scrollPlayerChild"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+
+    <View android:id="@+id/scoreboard_horizontal_view"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/layout_btn_roster"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/layout_btn_stats"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/layout_btn_fav"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/img_fav"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+
+    <View android:id="@+id/layout_server_button"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/img_team_brand_logo"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/txt_roster"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/txt_error_score"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+
+    <View android:id="@+id/score_spinner"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/schedule_loader"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/tv_loading"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+
+    <View android:id="@+id/tvRosterPopupTitle"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/txt_time"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/layout_venue"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/llRosterMain"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/txt_date"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/txt_team_one"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+
+
+
+    <View android:id="@+id/txt_team_two_score"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/txt_team_one_score"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+    <View android:id="@+id/txt_team_two"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </LinearLayout>

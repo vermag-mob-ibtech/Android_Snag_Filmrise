@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Configuration values -->
+    <string name="app_name">Coolflix</string>
+    <string name="site_name">coolflix</string>
+    <string name="app_type"></string>
+    <!-- login configurations -->
+    <bool name="is_soft_authentication_available">true</bool>
+    <bool name="is_facebook_login_require">true</bool>
+    <bool name="is_twitter_login_require">false</bool>
+    <!-- customer specific login like winnersView, coolflix, snagfilms -->
+    <bool name="is_customer_login_require">true</bool>
+    <!-- if it is true, user can move to feature screen without login and can watch movie also-->
+    <bool name="isGuestUserAllow">true</bool>
+
+    <bool name="is_forgot_password_require">true</bool>
+
+    <!--feature configuration -->
+    <bool name="is_banner_ad_allow">true</bool>
+    <bool name="is_video_ad_allow">true</bool>
+    <bool name="is_age_gate_require">false</bool>
+
+    <!-- Sharing configuration -->
+    <bool name="is_sharing_allow">true</bool>
+    <bool name="share_to_facebook_allow">true</bool>
+    <bool name="share_to_twitter_allow">true</bool>
+
+    <!-- screen configuration -->
+    <bool name="is_about_page_available">true</bool>
+
+
+    <!--cid for beacon analytics -->
+    <string name="BEACON_CID">0000014a-4ef3-d27b-a7de-dffb19400000</string>
+
+    <!-- urban airship config -->
+    <string name="URBAN_AIRSHIP_DEVELOPMENT_APP_KEY">OSFOi4TgSnO66Vr08PIK0w</string>
+    <string name="URBAN_AIRSHIP_DEVELOPMENT_SECRET_KEY">JbeX0yAeSMm1u3DXTS7RFQ</string>
+    <string name="GCM_SENDER_ID">120384078405</string>
+
+    <!-- Apptentive api key-->
+    <string name="APPTENTIVE_API_KEY">877efde9cecd050581c95386218454edea626b6d2d5b8081804429fcb7b12522</string>
+
+    <!-- SNS config -->
+    <string name="FACEBOOK_APP_ID">828619083848385</string>
+
+    <!-- For twitter consumer key and secret key mentioned into TwitterUtil.java, there is no change across app-->
+     <!-- For google plus, there is nothing required at app level like api key or secret key-->
+
+
+    <!-- leaderboard ad is used for tablet but in our case both is same -->
+    <string name="DFP_LEADERBOARD_AD_UNIT_ID"></string>
+    <string name="DFP_BANNER_AD_UNIT_ID"></string>
+
+
+    <!-- Roku Dial configuration for showing video on roku device-->
+    <!-- Roku Dial -->
+    <string name="ROKU_TV_APP_ID">roku</string>
+    <string name="ROKU_TV_APP_NAME">Coolflix</string>
+    <string name="ROKU">roku</string>
+    <!--Roku config end here -->
+    <!-- FIRE TV Configuration -->
+    <!-- FIRE TV CONSTANTS -->
+    <string name="FIRE_TV_APP_ID">Snagfilms</string>
+    <string name="FIRE_TV_APP_NAME">SnagFilms</string>
+
+    <!--Google cast id for chromecast -->
+    <string name="chrome_cast_app_id">CC1AD845</string>
+
+    <!-- Google analytics Id-->
+     <string name="GA_ID">UA-57697208-4</string>
+    <!--Flurry analytics -->
+    <string name="FLURRY_API_KEY">HJ8VSQKDJ54YMM28P76Z</string>
+
+    <bool name="isAkamaiEnabled">false</bool>
+</resources>

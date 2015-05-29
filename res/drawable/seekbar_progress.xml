@@ -22,10 +22,10 @@
             <shape>
                 <gradient
                     android:angle="270"
-                    android:centerColor="@color/red"
+                    android:centerColor="@color/seek_bar_color_prog"
                     android:centerY="0.75"
-                    android:endColor="@color/red"
-                    android:startColor="@color/red" />
+                    android:endColor="@color/seek_bar_color_prog"
+                    android:startColor="@color/seek_bar_color_prog" />
             </shape>
         </clip>
         </item>

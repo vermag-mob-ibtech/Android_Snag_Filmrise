@@ -23,7 +23,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="@dimen/imageLogo_margin_left"
+                android:layout_marginLeft="17dp"
                 android:layout_marginRight="@dimen/imageLogo_margin_Right"
                 android:background="@drawable/snagfilms_logo" />
         </LinearLayout>
@@ -34,7 +34,7 @@
             android:layout_height="35dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="@dimen/marginright"
+            android:layout_marginRight="20dp"
             android:background="@drawable/button_selector"
             android:text="@string/cancel"
             android:textColor="@color/age_gate_cancel_text_color" />
@@ -64,6 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/tv_password"
+            android:layout_centerHorizontal="true"
             android:layout_marginLeft="@dimen/margin"
             android:layout_marginRight="@dimen/margin"
             android:fontFamily="sans-serif-light"
@@ -71,71 +72,75 @@
             android:textSize="@dimen/all_media_sub_header_text_size" />
 
         <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_error"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
             android:id="@+id/completeDate"
-        android:orientation="horizontal" >
-
-        <EditText
-            android:id="@+id/dateMonth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="--"    
-             android:inputType="number"
-              android:maxLength="2"
-              android:selectAllOnFocus="true"
+            android:layout_below="@+id/tv_error"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/dateMonth"
+            	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="--"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="30sp"
+                android:selectAllOnFocus="true"
               android:textCursorDrawable="@drawable/custom_cursor">        
             <!-- android:maxLength="2"  -->
            
 
-            <requestFocus />
-        </EditText>
+                <requestFocus />
+            </EditText>
 
-        <TextView
-            android:id="@+id/textviewId1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="/" />
+            <TextView
+                android:id="@+id/textviewId1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:text="/" />
 
-        <EditText
-            android:id="@+id/dateDay"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="--"
-            android:inputType="number"
-             android:maxLength="2"
-             android:selectAllOnFocus="true"
-             android:textCursorDrawable="@drawable/custom_cursor"/>
+            <EditText
+                android:id="@+id/dateDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="--"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="30sp"
+                android:selectAllOnFocus="true"
+                android:textCursorDrawable="@drawable/custom_cursor"/>
              
 
-        <TextView
-            android:id="@+id/textviewId2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="/" />
+            <TextView
+                android:id="@+id/textviewId2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+            	android:text="/" />
 
-        <EditText
-            android:id="@+id/dateYear"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="----"
-            android:inputType="number"
-            android:maxLength="4" 
-            android:selectAllOnFocus="true"
-            android:textCursorDrawable="@drawable/custom_cursor"/>
+            <EditText
+                android:id="@+id/dateYear"
+            	android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="----"
+                android:textSize="30sp"
+                android:inputType="number"
+                android:maxLength="4"
+                android:selectAllOnFocus="true"
+            	android:textCursorDrawable="@drawable/custom_cursor"/>
     </LinearLayout>
 
-       
         <LinearLayout
             android:id="@+id/layout_age_gate_cb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/passwordHint"
-            android:layout_marginLeft="@dimen/margin"
-            android:layout_marginTop="18dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="12dp"
             android:orientation="vertical" >
 
             <CheckBox
@@ -152,7 +157,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/passwordHint"
             android:layout_marginRight="@dimen/margin"
-            android:layout_marginTop="22dp"
+            android:layout_marginTop="16dp"
             android:layout_toRightOf="@+id/layout_age_gate_cb"
             android:orientation="vertical" >
 

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/mainLayout"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ProgressBar
+        android:id="@+id/spinner"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <View
+            android:id="@+id/viewTopFavoriteList"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/gnett_favorite_view_top_width"
+            android:background="@color/red"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewTopFavoriteList"
+            android:background="@color/black"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvTeamListMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fav_screen_text_margin_left"
+                android:layout_marginRight="@dimen/fav_screen_text_margin_right"
+                android:layout_marginTop="@dimen/gnett_teamlist_searchmargin"
+                android:gravity="center"
+                android:text="Text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/gnett_favorite_text_main_size" />
+
+            <TextView
+                android:id="@+id/tvTeamListSub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fav_screen_text_margin_left"
+                android:layout_marginRight="@dimen/fav_screen_text_margin_right"
+                android:gravity="center"
+                android:text="Text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/gnett_favorite_text_main_size" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fav_screen_text_margin_left"
+                android:layout_marginRight="@dimen/fav_screen_text_margin_right"
+                android:layout_marginTop="@dimen/gnett_teamlist_searchmargin"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/hvTeamListLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fav_screen_image_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/snagfilms_icon"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_layout"
+            android:background="@color/black"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rlSearchTeamList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/gnett_teamlist_searchmargin_bottom"
+                android:layout_marginLeft="@dimen/fav_screen_text_margin_left"
+                android:layout_marginRight="@dimen/fav_screen_text_margin_right"
+                android:layout_marginTop="@dimen/gnett_teamlist_searchmargin" >
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoEtSearchTeamList"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/auto_search_box_height"
+                    android:layout_above="@+id/tvTeamListContinue"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/snagfilms_icon"
+                    android:completionThreshold="2"
+                    android:cursorVisible="true"
+                    android:drawableLeft="@drawable/snagfilms_icon"
+                    android:drawablePadding="10dp"
+                    android:dropDownHeight="wrap_content"
+                    android:dropDownVerticalOffset="@dimen/gnett_searchPopup_marginOffset"
+                    android:dropDownWidth="wrap_content"
+                    android:ellipsize="end"
+                    android:drawableRight="@drawable/snagfilms_icon"
+                    android:gravity="left|center_vertical"
+                    android:hint="Find Sports, Teams, and Players"
+                    android:imeOptions="actionDone"
+                    android:padding="@dimen/gnett_teamListSearchPaddingLeftRight"
+                    android:popupBackground="@android:color/transparent"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/snagfilms_icon"
+                    android:textSize="@dimen/gnett_favorite_text_size" />
+
+                <ImageView
+                    android:id="@+id/imgDeleteSearchTeamList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/snagfilms_icon"
+                    android:visibility="visible" />
+
+                <ProgressBar
+                    android:id="@+id/loaderSearch"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgDeleteSearchTeamList"
+                    android:layout_alignLeft="@+id/imgDeleteSearchTeamList"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignRight="@+id/imgDeleteSearchTeamList"
+                    android:layout_alignTop="@+id/imgDeleteSearchTeamList"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="10dp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/middle_layout"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/search_layout"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/llDragSortListView"
+                android:layout_width="match_parent"
+                android:layout_above="@+id/llFavoriteContinue"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/fav_screen_text_margin_left"
+                android:layout_marginRight="@dimen/fav_screen_text_margin_right"
+                android:layout_marginTop="11dp"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <com.mobeta.android.dslv.DragSortListView
+                    xmlns:dslv="http://schemas.android.com/apk/res/com.viewlift.coolflix"
+                    android:id="@+id/listDropDown"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="3dp"
+                    android:choiceMode="multipleChoice"
+                    android:divider="#727272"
+                    android:dividerHeight="1px"
+                    android:padding="3dp"
+                    dslv:click_remove_id="@+id/click_remove"
+                    dslv:collapsed_height="1px"
+                    dslv:drag_enabled="true"
+                    dslv:drag_handle_id="@+id/drag_handle"
+                    dslv:drag_scroll_start="0.33"
+                    dslv:drag_start_mode="onDown"
+                    dslv:float_alpha="0.6"
+                    dslv:remove_enabled="true"
+                    dslv:remove_mode="clickRemove"
+                    dslv:slide_shuffle_speed="0.3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llFavoriteContinue"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fav_screen_continiue_btn_height"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/fav_screen_text_margin_left"
+                android:layout_marginRight="@dimen/fav_screen_text_margin_right"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvTeamListContinue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Continue"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/gnett_favorite_text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,51 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!--
-    <color name="bg">#02415c</color>
-    <color name="black">#000000</color>
-    <color name="darker_gray">#373737</color>
-    <color name="orange">#FFA500</color>
-    <color name="dark_gray">#7A7676</color>
-    <color name="yellow">#E6B800</color>
-    <color name="white">#ffffff</color>
-    <color name="grey">#696969</color>
-    <color name="light_gray">#efefef</color>
-    <color name="very_dark_gray">#272727</color>
-    <color name="signup_color">#33CCFF</color>
-    <color name="login_color">@color/signup_color</color>
-    <color name="grid_state_pressed">#BB7dbcd3</color>
-    <color name="grid_state_focused">#777dbcd3</color>
-    <color name="navigation_background">@color/very_dark_gray</color>
-    <color name="red">#FF0000</color>
-    <color name="header_color">#f8f7f7</color>
-    <color name="facebook_btncolor">#3B5999</color>
-    <color name="twitter_btncolor">#01A9DB</color>
-    <color name="google__btncolor">#DF0101</color>
-    <color name="pressedcolor">#A4A4A4</color>
-    <color name="age_gate_btn_color">#d9dbdb</color>
-    <color name="age_gate_btn_text_color">#828585</color>
-    <color name="age_gate_separtor">#c0c2c2</color>
-    <color name="age_gate_text_color">#636363</color>
-    <color name="bgcolor">@color/black</color>
-    <color name="holo_blue_light">#33b5e5</color>
-    <color name="media_grey">@color/very_dark_gray</color>
-    <color name="light_grey">#cccccc</color>
-    <color name="secondary_center_prog">#0000ffff</color>
-    <color name="secondary_end_prog">@color/red</color>
-    <color name="secondary_start_prog">#0000ffff</color>
-    <color name="thumb_color">#D0D0D0</color>
-    <color name="settings_header_color">@color/header_color</color>
-    <color name="signin_btn_color">#f05a24</color>
-    <color name="facebook_btn_color">#3b5a9c</color>
-    <color name="settings_selected_text">@color/signin_btn_color</color>
-    <color name="welcome_button_text_color">@color/white</color>
-    <color name="normal_button_color">#008ee0</color>
-    <color name="share_title_background"> #2B547E</color>
-    <color name="share_gridview">#344152</color>
-    -->
-
-
     <!-- Welcome Screen start -->
     <color name="common_btn_color">#2c9ed9</color>
     <color name="sign_in_btn_color">#0b4e70</color>
@@ -134,12 +89,12 @@
     <color name="media_grey">@color/very_dark_gray</color>
     <color name="light_grey">#cccccc</color>
     <color name="secondary_center_prog">#0000ffff</color>
-    <color name="secondary_end_prog">@color/red</color>
+    <color name="seek_bar_color_prog">#2c9ed9</color>
+    <color name="secondary_end_prog">#2c9ed9</color>
     <color name="secondary_start_prog">#0000ffff</color>
     <color name="thumb_color">#D0D0D0</color>
     <color name="settings_header_color">@color/header_color</color>
     <color name="signin_btn_color">#f05a24</color>
-    <color name="facebook_btn_color">#3b5a9c</color>
     <color name="settings_selected_text">@color/signin_btn_color</color>
     <color name="welcome_button_text_color">@color/white</color>
     <color name="normal_button_color">#008ee0</color>
@@ -162,6 +117,8 @@
     <color name="overflow_menu_color">@color/light_gray</color>
     <color name="overflow_menu_color_image">#bdbdbd</color>
     <color name="navigation_text_color">@color/header_color</color>
+	<color name="overflow_menu_text_color">@color/black</color>
+    <color name="overflow_menu_lower_version_text_color">@color/black</color>
 
     <!-- Detail screen -->
     <color name="trailer_text_color">@color/detail_text_color</color>
@@ -313,7 +270,7 @@
     <color name="phone_show_detail_screen_episode_count_text_color">@color/detail_title_text_color</color>
     <color name="phone_show_detail_app_name_text_color">@color/detail_title_text_color</color>
     <color name="phone_show_detail_screen_shows_desc_text_color">@color/detail_title_text_color</color>
-    <color name="phone_show_detail_screen_shows_more_text_color">@color/detail_title_text_color</color>
+    <color name="phone_show_detail_screen_shows_more_text_color">@color/more_text_color</color>
     <color name="phone_show_detail_screen_btn_watch_text_color">@color/common_btn_text_color</color>
     <color name="phone_show_detail_screen_btn_watch_pressed_state_color">@color/grey</color>
     <color name="phone_show_detail_screen_btn_watch_unpressed_state_color">@color/common_btn_color</color>
@@ -344,7 +301,6 @@
     <color name="age_gate_hint_text_color">@color/black</color>
     <color name="age_gate_btn_cancel_text_color">@color/common_btn_color</color>
     <color name="age_gate_btn_continue_text_color">@color/common_btn_color</color>
-    <color name="age_gate_cancel_text_color">@color/white</color>
 
     <!-- Caption Style Dialog in caption_style_dialog.xml -->
     <color name="caption_style_dialog_caption_text_color">@color/captions_text_color</color>
@@ -414,26 +370,12 @@
     <color name="film_playable_dialog_line_color">@color/black</color>
     <color name="film_playable_dialog_btn_ok_text_color">@color/grey</color>
     <color name="film_playable_dialog_btn_cancel_text_color">@color/grey</color>
-
+`
     <!-- Browse Fragment Phone in fragment_browse_phone.xml -->
-    <color name="browse_fragment_title_phone_text_color">@color/black</color>
-    <color name="browse_fragment_line_color">@color/separator_color</color>
-    <color name="browse_fragment_title_phone_text_color">@color/black</color>
-    <color name="browse_fragment_title_phone_text_color">@color/black</color>
-    <color name="browse_fragment_title_phone_text_color">@color/black</color>
-    <color name="browse_fragment_title_phone_text_color">@color/black</color>
-    <color name="browse_fragment_title_phone_text_color">@color/black</color>
     <color name="browse_fragment_title_phone_text_color">@color/black</color>
 
     <!-- Browse Fragment Phone in fragment_browse_phone.xml -->
-    <color name="browse_fragment_title_phone_text_color">@color/black</color>
     <color name="browse_fragment_line_color">@color/separator_color</color>
-    <color name="browse_fragment_title_phone_text_color">@color/black</color>
-    <color name="browse_fragment_title_phone_text_color">@color/black</color>
-    <color name="browse_fragment_title_phone_text_color">@color/black</color>
-    <color name="browse_fragment_title_phone_text_color">@color/black</color>
-    <color name="browse_fragment_title_phone_text_color">@color/black</color>
-    <color name="browse_fragment_title_phone_text_color">@color/black</color>
     <color name="fragment_browse_error_text">@color/white</color>
 
     <!-- Phone and Tab More Detail Fragment in fragment_detail_more_mob.xml and fragment_dialog_detail_more_tab.xml are common. -->
@@ -455,17 +397,10 @@
 
     <!-- Fragment Fragment in fragment_featured.xml -->
     <color name="featured_fragment_sub_title_text_color">@color/black</color>
-    <color name="featured_fragment_line_color">@color/separator_color</color>
-    <color name="featured_fragment_sub_title_text_color">@color/black</color>
-    <color name="featured_fragment_sub_title_text_color">@color/black</color>
-    <color name="featured_fragment_sub_title_text_color">@color/black</color>
 
     <!-- Home Fragment in fragment_home.xml -->
     <color name="fragment_home_featured_title">@color/black</color>
     <color name="featured_fragment_line_color">@color/separator_color</color>
-    <color name="featured_fragment_sub_title_text_color">@color/black</color>
-    <color name="featured_fragment_sub_title_text_color">@color/black</color>
-    <color name="featured_fragment_sub_title_text_color">@color/black</color>
 
     <!-- HomeGrid Fragment in fragment_homegrid.xml -->
     <color name="fragment_home_grid_featured_title_color">@color/black</color>
@@ -497,7 +432,6 @@
     <!-- Search List and Category List -->
     <color name="list_movie_name_text_color">@color/black</color>
     <color name="list_movie_time_text_color">@color/black</color>
-    <color name="list_line_color">@color/separator_color</color>
     <color name="list_movie_year_text_color">@color/black</color>
 
     <!-- Related and Trailer Film list -->
@@ -506,6 +440,13 @@
 
     <!-- Related and Trailer Film list -->
     <color name="list_line_color">@color/separator_color</color>
-    <color name="list_line_color">@color/separator_color</color>
+
+    <color name="edit_text_border_color">#3a3a3a</color>
+    <color name="normal_grey">#3a3a3a</color>
+
+    <color name="captions_enabled_text_color">#2c9ed9</color>
+    <color name="captions_disabled_text_color">#ffffff</color>
+
+
 
 </resources>

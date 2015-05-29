@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/gnett_favorite_view_top_width"
+        android:background="@color/red"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/moreList"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/light_grey"
+        android:dividerHeight="0.25dp"
+        android:listSelector="@android:color/transparent" />
+
+</LinearLayout>

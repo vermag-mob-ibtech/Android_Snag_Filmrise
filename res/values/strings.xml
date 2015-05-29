@@ -16,7 +16,7 @@
     <string name="device_search">Search Device</string>
     <string name="or">OR</string>
     <string name="search_hint">Search Coolflix</string>
-    
+    <string name="authority">com.viewlift.coolflix.app.provider.MovieSuggestionProvider</string>
 
     <!-- Action bar strings end -->
 
@@ -26,7 +26,19 @@
         <item>Log In</item>
     </array>
 
-    <string name="app_name">Coolflix</string>
+    <array name="nav_drawer_selected_icons">
+        <item>@drawable/snagfilms_icon</item>
+        <item>@drawable/snagfilms_icon</item>
+        <item>@drawable/snagfilms_icon</item>
+        <item>@drawable/snagfilms_icon</item>
+        <item>@drawable/snagfilms_icon</item>
+        <item>@drawable/snagfilms_icon</item>
+        <item>@drawable/snagfilms_icon</item>
+    </array>
+
+    <string name="remove_from_queue_msg">Do you want to remove from Queue?</string>
+    <string name="add_to_queue_msg">Do you want to add to Queue?</string>
+
     <string name="hello_world">Hello world!</string>
     <string name="action_title"><b>SNAG</b>FILMS</string>
     <string name="film_title">SNAGFILMS</string>
@@ -35,9 +47,9 @@
     <string name="Recommended_label">Recommended</string>
     <string name="recommendations">Recommendations</string>
     <string name="dynamic_lead_label">Featured</string>
-    <string name="app_id">828619083848385</string>
-    <string name="chrome_cast_app_id">CC1AD845</string>
+
     
+    <string name="close">close</string>
     <!-- Detail Screen -->
     <string name="det_image">FilmImage</string>
     <string name="snagfilms">filmrise</string>
@@ -122,34 +134,35 @@
     <string name="enter_your_dob">Enter Your Birthday</string>
     <string name="pin">Pin</string>
 
-    <!-- dialog strings -->
-    <string name="alllogin_text">Choose How You Want To Log In</string>
+	<!-- dialog strings -->
+    <string name="alllogin_text">Login To Get Started</string>
     <string name="alllogin_textalt">Log in to get started.</string>
-    <string name="subtitle">Not already a member? Register   </string>
+    <string name="subtitle">Not already a member? SignUp   </string>
     <string name="subtitleHere"> here.</string>
     <string name="forgot_password">Reset Password</string>
     <string name="forgot_password_desc">Enter the email address you used to create your account and we will email you instructions on how to reset your password.</string>
     <string name="email">E-mail Address</string>
     <string name="submit">Submit</string>
     <string name="submit_msg">Password reset successfully</string>
-    <string name="register_account">Register For A filmrise Account</string>
+    <string name="register_account">Register For A Coolflix Account</string>
     <string name="name">Name</string>
-    <string name="password">Enter Current Password</string>
+    <string name="password">Enter Password</string>
     <string name="repassword">Re enter Password</string>
     <string name="hide">Hide?</string>
     <string name="cancel">Cancel</string>
     <string name="continue_caps">CONTINUE</string>
     <string name="cancel_caps">CANCEL</string>
-    <string name="registerforsnagfilms">Register for filmrise Account</string>
+    <string name="registerforsnagfilms">Register for Coolflix Account</string>
     <string name="errormessage">[Error msg goes here]</string>
     <string name="forgotpassword">Forgot Password?</string>
     <string name="snagfilm">SNAGFILMS</string>
     <string name="forgot_email_address">Forgot your email address?</string>
+    <string name="subscibe">Subscribe Now</string>
 
     <!-- login screen strings -->
     <string name="browse">Browse </string>
     <string name="discover">Discover Something Different</string>
-    <string name="register">Sign In</string>
+    <string name="register">Sign Up</string>
     <string name="account">Already have an account?</string>
     <string name="newregister">New to filmrise?Register an account today</string>
 
@@ -201,7 +214,7 @@
     <string name="screen_size">Screen Size</string>
     <string name="full">Full</string>
     <string name="wide">Wide</string>
-    <string name="add_to_queue">Add to Queue</string>
+    <string name="add_to_queue">Add To Queue</string>
     <string name="remove_from_queue">Remove From Queue</string>
     <string name="already_in_queue">Already In Queue</string>
     <string name="no_history">No History</string>
@@ -283,4 +296,47 @@
     <string name="dateOfBirth">--/--/----</string>
     <string name="date_format">(MM/DD/YYYY)</string>
 
+
+    <!-- Dialog for is Film Playable -->
+    <string name="film_playable_title">Restricted Content</string>
+    
+    <!-- Beacon Analyitcs Values-->
+    <string name="hostName">CoolFlix</string>
+    <string name="platform">Android</string>
+
+    <string name="no_data_available">No Data Available</string>
+    <string name="here_caption">HERE</string>
+    <string name="remove_favorite_appended_message"></string>
+    <string name="gannett_roster_screen_name"></string>
+
+    <string name="loading_related_movie_text">Loading Related Videos</string>
+
+    <!-- Adding New String to remove hardcoding -->
+    <string name="show">Show</string>
+    <string name="collection">Collection</string>
+    <string name="enter_valid_email_text">Please enter a valid email address.</string>
+    <string name="forgot_password_instruction_text">Follow the instructions in the email we just sent you to reset your password.</string>
+    <string name="success">Success</string>
+    <string name="time_format">00:00:00</string>
+    <string name="casting_to_chromecast_device_text">Casting to chromecast Device</string>
+    <string name="film_data_not_available_text">OOPS! Film data not available</string>
+    <string name="loading_details_msg">Loading Details...</string>
+    <string name="info">Info</string>
+    <!--<string name="cast">Cast</string>-->
+    <string name="crew_text">Crew</string>
+    <string name="shows">Shows</string>
+    <string name="no_film_recommended_text">No Films in Recommendation</string>
+    <string name="no_film_history_text">No Films in History</string>
+    <string name="no_film_queue_text">No Films in Queue</string>
+    <string name="there_no_film_queue_text">There are no films in queue</string>
+    <string name="there_no_film_history_text">There are no films in History</string>
+    <string name="there_no_film_recommendation_text">There are no films in Recommendations</string>
+    <string name="no_data_found">No data found</string>
+    <string name="standings">Standings</string>
+    <string name="touch_to_cast_text">Touch to Cast Videos to your TV</string>
+    <string name="login_progress_msg">Login in progress...</string>
+    <string name="login_loader_text">Login in progress...</string>
+
+
+   
 </resources>

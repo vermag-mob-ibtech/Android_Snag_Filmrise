@@ -20,7 +20,6 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/phone_show_detail_screen_movie_title_text_color"
         android:textSize="@dimen/textsize_hdr_detail" />
-    
 
     <!-- footer contains Ads -->
 
@@ -30,14 +29,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" >
-        
+
         <LinearLayout
             android:id="@+id/ads_container"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="gone"
             android:layout_centerHorizontal="true"
-            android:orientation="horizontal" >
+            android:orientation="horizontal"
+            android:visibility="gone" >
         </LinearLayout>
 
         <air.com.snagfilms.cast.chromecast.widget.MiniController
@@ -68,11 +67,11 @@
 
             <ImageView
                 android:id="@+id/image_detail"
-                android:layout_width="fill_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:contentDescription="@string/det_image"
                 android:adjustViewBounds="true"
+                android:contentDescription="@string/det_image"
                 android:src="@drawable/loading_snag" />
 
             <LinearLayout
@@ -161,8 +160,6 @@
                             android:textColor="@color/btn_text_detail"
                             android:textSize="@dimen/textsize_btn_detail"
                             android:visibility="gone" />
-                        
-                      
                     </LinearLayout>
                     <!-- Release date info -->
 
@@ -240,9 +237,9 @@
                         android:background="@drawable/more_text_detail"
                         android:fontFamily="sans-serif-light"
                         android:text="@string/more_detail"
-                        android:visibility="invisible"
                         android:textColor="@color/phone_show_detail_screen_shows_more_text_color"
-                        android:textSize="@dimen/textsize_body_detail" />
+                        android:textSize="@dimen/textsize_body_detail"
+                        android:visibility="invisible" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -251,7 +248,7 @@
                     android:layout_height="fill_parent"
                     android:orientation="horizontal" >
 
-                    <Button
+                    <RelativeLayout
                         android:id="@+id/btn_watchfilm"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/buttonheight_detail"
@@ -260,9 +257,38 @@
                         android:fontFamily="sans-serif"
                         android:text="@string/watch_episode"
                         android:textColor="@color/phone_show_detail_screen_btn_watch_text_color"
-                        android:textSize="@dimen/textsize_btn_detail" />
+                        android:textSize="@dimen/textsize_btn_detail" >
 
-                    <Button
+                        <ImageView
+                            android:id="@+id/img_play"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_detail"
+                            android:background="@drawable/play_icon" />
+
+                        <TextView
+                            android:id="@+id/line"
+                            android:layout_width="@dimen/detail_line_width"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="@dimen/margin_detail"
+                            android:layout_toRightOf="@+id/img_play"
+                            android:background="@color/phone_movie_detail_screen_seperator_line_color" />
+
+                        <TextView
+                            android:id="@+id/txt_watchfilm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="@string/watch_episode"
+                            android:textColor="@color/phone_movie_detail_screen_btn_watch_text_color"
+                            android:textSize="@dimen/textsize_btn_detail" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
                         android:id="@+id/btn_trailer"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/buttonheight_detail"
@@ -272,9 +298,38 @@
                         android:fontFamily="sans-serif"
                         android:text="@string/watch_trailer"
                         android:textColor="@color/phone_show_detail_screen_btn_trailer_text_color"
-                        android:textSize="@dimen/textsize_btn_detail" />
+                        android:textSize="@dimen/textsize_btn_detail" >
 
-                    <Button
+                        <ImageView
+                            android:id="@+id/img_play"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_detail"
+                            android:background="@drawable/play_icon" />
+
+                        <TextView
+                            android:id="@+id/line"
+                            android:layout_width="@dimen/detail_line_width"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="@dimen/margin_detail"
+                            android:layout_toRightOf="@+id/img_play"
+                            android:background="@color/phone_movie_detail_screen_seperator_line_color" />
+
+                        <TextView
+                            android:id="@+id/txt_trailers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="@string/watch_trailer"
+                            android:textColor="@color/phone_movie_detail_screen_btn_watch_text_color"
+                            android:textSize="@dimen/textsize_btn_detail" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
                         android:id="@+id/btn_queue"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/buttonheight_detail"
@@ -284,7 +339,35 @@
                         android:fontFamily="sans-serif"
                         android:text="@string/add_queue_button_text"
                         android:textColor="@color/phone_show_detail_screen_btn_queue_text_color"
-                        android:textSize="@dimen/textsize_btn_detail" />
+                        android:textSize="@dimen/textsize_btn_detail" >
+
+                        <ImageView
+                            android:id="@+id/img_queue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/imgQue_marginLeft"
+                            android:background="@drawable/queue_icon" />
+
+                        <TextView
+                            android:id="@+id/line"
+                            android:layout_width="@dimen/detail_line_width"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="@dimen/imgQue_marginLeft"
+                            android:layout_toRightOf="@+id/img_queue"
+                            android:background="@color/phone_movie_detail_screen_seperator_line_color" />
+
+                        <TextView
+                            android:id="@+id/txt_queue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/add_queue_button_text"
+                            android:textColor="@color/phone_movie_detail_screen_btn_queue_text_color"
+                            android:textSize="@dimen/textsize_btn_detail" />
+                    </RelativeLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -305,7 +388,7 @@
                 android:text="@string/clips"
                 android:textColor="@color/phone_show_detail_screen_clips_text_color"
                 android:textSize="@dimen/related_textsize_detail"
-                android:visibility="visible" />
+                android:visibility="invisible" />
 
             <air.com.snagfilms.app.component.HorizontalView
                 android:id="@+id/horizontallistview"

@@ -2,9 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/web_layout"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-  	>
-    
+    android:layout_height="fill_parent" >
+
     <RelativeLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="fill_parent"
@@ -28,15 +27,21 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="@dimen/btn_browse_right"
-            android:background="@drawable/btn_cross"
-         />
+            android:background="@drawable/btn_cross" />
     </RelativeLayout>
 
     <WebView
         android:id="@+id/webView"
-        android:layout_below="@+id/relativeLayout1"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent" />
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relativeLayout1" />
+
+    <FrameLayout
+        android:id="@+id/childWebView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relativeLayout1" >
+    </FrameLayout>
 
     <RelativeLayout
         android:layout_width="wrap_content"

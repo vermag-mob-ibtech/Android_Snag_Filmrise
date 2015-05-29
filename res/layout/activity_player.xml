@@ -89,5 +89,10 @@
             android:text="Preparing..."
             android:textColor="@color/video_player_progress_bar_text_color" />
     </LinearLayout>
-
+<LinearLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+    />
 </RelativeLayout>

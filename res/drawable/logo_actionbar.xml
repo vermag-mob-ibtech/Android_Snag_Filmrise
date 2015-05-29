@@ -3,8 +3,8 @@
 
     <item
         android:drawable="@drawable/snagfilms_logo"
-        android:left="@dimen/logo_left"
-        android:top="@dimen/logo_top"
-        android:bottom="@dimen/logo_bottom"
-       />
+        android:left="@dimen/logo_left" />
+        <!-- android:top="@dimen/logo_top"
+        android:bottom="@dimen/logo_bottom" -->
+       
 </layer-list>
